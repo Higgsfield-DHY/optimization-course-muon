@@ -1,0 +1,172 @@
+\section{收敛性结果与完整推导}
+本节重构 Wang 等人\cite{wang2026practical}的 Algorithm~1 与 Theorem~1。
+为便于逐项检查，保留任意正常数下的有限步界，不以数值搜索得到的多项式常数代替证明。
+结论针对以下单个矩阵变量的理论算法；第\ref{sec:implementation}节列出的工程修改需另外核对。
+
+\subsection{假设、标量映射与常数}
+令 $f:\mathbb R^{m\times n}\to\mathbb R$，$g_t=\nabla f(W_t)$，假设：
+\begin{enumerate}
+\item $f_*:=\inf_W f(W)>-\infty$，记 $\Delta=f(W_0)-f_*$。
+\item $\|\nabla f(X)-\nabla f(Y)\|_F\le L\|X-Y\|_F$。
+\item 在迭代历史 $\mathcal F_t$ 给定后，新的批梯度满足
+ $\mathbb E[G_t\mid\mathcal F_t]=g_t$，
+ $\mathbb E[\|G_t-g_t\|_F^2\mid\mathcal F_t]\le\sigma^2/b$。
+ 批内样本独立，批大小为 $b$。这里写成条件形式，以明确自适应迭代中使用的新样本与过去的关系。
+\end{enumerate}
+
+固定 $a=3.4445$、$b_p=-4.7750$、$c=2.0315$，定义
+\begin{equation}
+ p(x)=a+b_px+cx^2,\quad q(s)=s p(s^2),\quad
+ q_0(s)=s,\quad q_{j+1}(s)=q(q_j(s)).
+\end{equation}
+注意 $b_p$ 是多项式系数，与批大小 $b$ 不同。
+当 $s>0$ 时令 $\chi(s)=q_5(s)/s$，并以连续延拓定义 $\chi(0)=a^5$。
+取
+\begin{equation}\label{eq:constants}
+ C_2=\min_{0\le s\le1}\chi(s),\quad
+ C_1=\max_{0\le s\le1}\chi(s),\quad
+ q_{\max}=\max_{0\le s\le1}q_5(s),\quad
+ C_3=\min\{C_1,q_{\max}\sqrt{\min(m,n)}\}.
+\end{equation}
+这些常数有限且 $C_2>0$，理由如下。由于 $c>0$ 且 $4ac-b_p^2>0$，
+$p(x)\ge a-b_p^2/(4c)>0$ 对所有实数 $x$ 成立。
+因而
+\[
+ \chi(s)=\prod_{j=0}^{4}p(q_j(s)^2)
+\]
+在 $[0,1]$ 上为严格正的连续函数，包括 $s=0$ 的延拓值。
+紧致性给出式\eqref{eq:constants}中的极值；这里不需要假设经验 NS 逐步逼近 $1$。
+另外 $C_2\le q_5(1)\le q_{\max}$ 且 $C_2\le C_1$，故 $C_2\le C_3$。
+
+\subsection{奇异值映射与方向对齐}
+理论迭代使用
+\begin{align}
+ B_t&=\beta B_{t-1}+(1-\beta)G_t, & B_{-1}&=0,\\
+ M_t&=\beta B_t+(1-\beta)G_t, &
+ \tau_t&=\max\{\|M_t\|_F,\varepsilon\},\\
+ X_{t,0}&=M_t/\tau_t,& X_{t,j+1}&=p(X_{t,j}X_{t,j}^{\mathsf T})X_{t,j},\quad 0\le j<5,\\
+ D_t&=X_{t,5},& W_{t+1}&=(1-\eta\lambda)W_t-\eta D_t.
+\end{align}
+若 $M_t=U\operatorname{diag}(\sigma_i)V^{\mathsf T}$ 是紧致 SVD，令 $s_i=\sigma_i/\tau_t$。
+直接代入矩阵多项式并归纳可得
+\[
+ X_{t,j}=U\operatorname{diag}(q_j(s_i))V^{\mathsf T},\qquad 0<s_i\le1.
+\]
+零矩阵的输出为零；秩亏时只保留正奇异值，无须补齐零奇异值方向。
+由 $C_2s\le q_5(s)\le C_1s$，
+\begin{align}
+ \langle M_t,D_t\rangle_F
+ &=\tau_t\sum_i s_iq_5(s_i)
+ \ge C_2\|M_t\|_F^2/\tau_t
+ \ge C_2\|M_t\|_F-C_2\varepsilon/4,\label{eq:alignment}\\
+ \|D_t\|_F&\le\min\left\{C_1\sqrt{\sum_i s_i^2},q_{\max}\sqrt{\operatorname{rank}(M_t)}\right\}
+ \le C_3.\label{eq:direction}
+\end{align}
+最后一个对齐不等式分两种情况：当 $z=\|M_t\|_F\ge\varepsilon$ 时 $z^2/\tau_t=z$；
+当 $0\le z<\varepsilon$ 时，$z^2/\varepsilon-z+\varepsilon/4=(z-\varepsilon/2)^2/\varepsilon\ge0$。
+这样得到的界直接控制下降方向，不依赖 $\|D_t-UV^{\mathsf T}\|$ 随 NS 次数单调减小。
+
+\subsection{主定理的有限步形式}
+\begin{theorem}[文献 Theorem 1 的非优化常数形式]\label{thm:main}
+在上述假设下，取常数 $c_1,c_2,c_3>0$ 和 $T\ge\max\{1,c_2^2\}$，设置
+\begin{equation}\label{eq:parameters}
+ \eta=c_1T^{-3/4},\quad 1-\beta=c_2T^{-1/2},\quad
+ 0<\varepsilon\le c_3T^{-1/4},\quad
+ \lambda=\frac{C_2}{2(\|W_0\|_F+C_3\eta T)}.
+\end{equation}
+记 $C_4=C_2/2+C_3$、$A=2(C_2+C_3)/C_2$ 和 $E_0=\|B_{-1}-g_0\|_F$，则
+\begin{align}\label{eq:finite}
+ \frac1T\sum_{t=0}^{T-1}\mathbb E\|g_t\|_F
+ \le{}&\left[\frac{2\Delta}{C_2c_1}
+ +\frac{ALc_1C_4}{c_2}
+ +\frac{A\sqrt{2c_2}\sigma}{\sqrt b}+\frac{c_3}{2}\right]T^{-1/4}\nonumber\\
+ &+\frac{AE_0}{c_2}T^{-1/2}
+ +\frac{Lc_1C_4^2}{C_2}T^{-3/4}.
+\end{align}
+因此，固定问题与常数后，平均期望梯度 Frobenius 范数为 $O(T^{-1/4})$。
+\end{theorem}
+
+\subsection{权重、总更新和动量误差的控制}
+先证明权重衰减不会破坏所需的方向界。由 $C_2\le C_3$ 以及式\eqref{eq:parameters}，
+$0<\eta\lambda\le1/(2T)<1$。由式\eqref{eq:direction}归纳得到
+\begin{equation}\label{eq:weight}
+ \|W_t\|_F\le\|W_0\|_F+\eta C_3t,\quad
+ \lambda\|W_t\|_F\le C_2/2,\quad
+ \|H_t\|_F\le C_4,\qquad H_t=D_t+\lambda W_t.
+\end{equation}
+其中前一个不等式来自
+$\|W_{t+1}\|_F\le(1-\eta\lambda)\|W_t\|_F+\eta C_3\le\|W_t\|_F+\eta C_3$。
+
+令 $e_t=M_t-g_t$，$\zeta_t=G_t-g_t$。展开两个动量递推，得到
+\begin{align}
+ M_t&=\beta^{t+2}B_{-1}
+ +(1-\beta)\sum_{j=0}^{t-1}\beta^{t-j+1}G_j+(1-\beta^2)G_t,\\
+ e_t&=\beta^{t+2}(B_{-1}-g_0)
+ -\sum_{j=1}^{t}\beta^{t-j+2}(g_j-g_{j-1})+N_t,\label{eq:tracking-decomposition}\\
+ N_t&=(1-\beta)\sum_{j=0}^{t-1}\beta^{t-j+1}\zeta_j+(1-\beta^2)\zeta_t.
+\end{align}
+式\eqref{eq:tracking-decomposition}可通过把相邻梯度差的和展开、抵消内部项核查。
+光滑性与式\eqref{eq:weight}给出
+$\|g_j-g_{j-1}\|_F\le L\eta C_4$。
+条件无偏性使不同时间噪声的交叉内积期望为零，故
+\begin{align}
+ \mathbb E\|N_t\|_F^2
+ &\le\frac{\sigma^2}{b}\left[(1-\beta^2)^2
+ +(1-\beta)^2\sum_{j=0}^{t-1}\beta^{2(t-j+1)}\right]\\
+ &\le\frac{\sigma^2}{b}(1-\beta)\frac{1+2\beta-2\beta^3}{1+\beta}
+ \le\frac{2(1-\beta)\sigma^2}{b}.
+\end{align}
+再用三角不等式、几何级数和 Cauchy--Schwarz 不等式，得到
+\begin{equation}\label{eq:tracking-bound}
+ \overline E_T:=\frac1T\sum_{t=0}^{T-1}\mathbb E\|e_t\|_F
+ \le\frac{E_0}{T(1-\beta)}
+ +\frac{L\eta C_4}{1-\beta}
+ +\sigma\sqrt{\frac{2(1-\beta)}{b}}.
+\end{equation}
+初值项与梯度漂移项各使用一次几何和上界 $1/(1-\beta)$；噪声项使用二阶矩界后开平方。
+以上推导也覆盖 $\beta=0$，此时空和按零处理。
+
+\subsection{下降不等式、求和与收敛指标}
+\begin{proof}[定理\ref{thm:main}的证明]
+光滑性给出
+\[
+ f(W_{t+1})\le f(W_t)-\eta\langle g_t,H_t\rangle_F
+ +\frac{L\eta^2}{2}\|H_t\|_F^2.
+\]
+把线性项拆开，利用式\eqref{eq:alignment}和\eqref{eq:weight}：
+\begin{align}
+ \langle g_t,H_t\rangle_F
+ &=\langle M_t,D_t\rangle_F-\langle e_t,D_t\rangle_F
+   +\lambda\langle g_t,W_t\rangle_F\\
+ &\ge C_2\|M_t\|_F-C_2\varepsilon/4-C_3\|e_t\|_F
+   -\lambda\|W_t\|_F\|g_t\|_F\\
+ &\ge\frac{C_2}{2}\|g_t\|_F-(C_2+C_3)\|e_t\|_F-C_2\varepsilon/4.
+\end{align}
+因此，取期望后对 $t=0,\ldots,T-1$ 求和，以 $f(W_T)\ge f_*$ 消去终点，得到
+\begin{equation}\label{eq:pre-rate}
+ \frac1T\sum_{t=0}^{T-1}\mathbb E\|g_t\|_F
+ \le\frac{2\Delta}{C_2\eta T}+A\overline E_T
+ +\frac\varepsilon2+\frac{L\eta C_4^2}{C_2}.
+\end{equation}
+把式\eqref{eq:tracking-bound}及参数选择代入，三项分别为
+\[
+ \frac{E_0}{c_2}T^{-1/2},\qquad
+ \frac{Lc_1C_4}{c_2}T^{-1/4},\qquad
+ \frac{\sqrt{2c_2}\sigma}{\sqrt b}T^{-1/4}.
+\]
+其余项直接得到式\eqref{eq:finite}，证明完成。
+\end{proof}
+
+若 $\sigma>0$ 且 $\Delta>0$，可进一步平衡领先系数。忽略可自由选小的 $c_3/2$ 后，
+先对 $c_1$ 极小化，得到
+$c_1^2=\Delta c_2/[(C_2+C_3)LC_4]$；再平衡 $c_2^{-1/2}$ 与 $c_2^{1/2}$ 项，得到
+\[
+ c_2=\sqrt{\frac{2C_4L\Delta b}{(C_2+C_3)\sigma^2}}.
+\]
+于是领先尺度为 $(L\Delta\sigma^2/b)^{1/4}$ 乘上 NS 常数，与文献主结果的量级一致。
+若 $\sigma=0$ 或 $\Delta=0$，不使用含除零的优化常数公式，保留式\eqref{eq:finite}及任意正常数即可。
+
+定理控制的是驻点指标：均匀随机选取 $R\in\{0,\ldots,T-1\}$ 时，
+$\mathbb E\|\nabla f(W_R)\|_F$ 等于上述平均值。
+它不保证每一步梯度单调下降，也不保证非凸问题达到全局最优。
+令 $\lambda=0$，同样推导中取 $C_4=C_3$ 并去除衰减项，可得到无权重衰减的对应结论。

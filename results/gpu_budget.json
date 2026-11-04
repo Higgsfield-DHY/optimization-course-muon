@@ -1,0 +1,265 @@
+{
+  "limit_seconds": 28800.0,
+  "used_seconds": 3507.4571810862326,
+  "attempts": [
+    {
+      "label": "language_pilot_adamw_b8_lr0p0003_s99",
+      "seconds": 18.88398270000107,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "43a90892a4ca4e36ae693af5f5d531ab"
+    },
+    {
+      "label": "language_pilot_ns5_b8_lr0p02_s99",
+      "seconds": 17.861231700000644,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3ec3aa1ba544452fa5abdb05815945a8"
+    },
+    {
+      "label": "language_pilot_ns3_b8_lr0p02_s99",
+      "seconds": 16.693989999999758,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "23d384abd3b14e02ad08979e76e11633"
+    },
+    {
+      "label": "language_tuning_adamw_b8_lr0p0001_s101",
+      "seconds": 52.76854490000005,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e8f20b419bb548c4984988ee0bfba40b"
+    },
+    {
+      "label": "language_tuning_adamw_b8_lr0p0003_s101",
+      "seconds": 40.300771899999745,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "61ccd4c471d549979947b13cfab27358"
+    },
+    {
+      "label": "language_tuning_adamw_b8_lr0p001_s101",
+      "seconds": 44.98797629999899,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8591b0f481fe4149b171a60ca16a68de"
+    },
+    {
+      "label": "language_tuning_ns5_b8_lr0p005_s101",
+      "seconds": 59.72334190000038,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c53da2bf234c4e86a94013ad81382033"
+    },
+    {
+      "label": "language_tuning_ns5_b8_lr0p02_s101",
+      "seconds": 56.94422609999856,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "08491e6b8bf34e1eb1cade65ac7c4415"
+    },
+    {
+      "label": "language_tuning_ns5_b8_lr0p05_s101",
+      "seconds": 101.77172088623047,
+      "outcome": "RECOVERED_UNCLOSED_SESSION",
+      "reason": "Conservative wall-clock charge"
+    },
+    {
+      "label": "language_tuning_ns5_b8_lr0p05_s101",
+      "seconds": 51.51502110000001,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "620b7f3a5e604ebaa28dc7867c6c2a3e"
+    },
+    {
+      "label": "language_final_adamw_b8_lr0p001_s0",
+      "seconds": 286.6521300000004,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "56a3282721464a0d8bb17949966c0201"
+    },
+    {
+      "label": "language_final_ns5_b8_lr0p02_s0",
+      "seconds": 374.9618824999998,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8af89a641d4b4de3a691ff198faf8aa0"
+    },
+    {
+      "label": "language_final_ns3_b8_lr0p02_s0",
+      "seconds": 351.995704500001,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "9b9ff4140b9148d2be8e9c8fcd03d90c"
+    },
+    {
+      "label": "language_final_ns5_b8_lr0p02_s1",
+      "seconds": 305.1886986999998,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "eabb9d4a3195420aa917a21de1e7cf69"
+    },
+    {
+      "label": "language_final_ns3_b8_lr0p02_s1",
+      "seconds": 377.60625640000035,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4988276004e5449b965736f635b24ee0"
+    },
+    {
+      "label": "language_final_adamw_b8_lr0p001_s1",
+      "seconds": 299.87261220000073,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3a920c4d25844ede9d2b0f5111457f9f"
+    },
+    {
+      "label": "language_final_ns3_b8_lr0p02_s2",
+      "seconds": 378.0724506000006,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d42053414f0349fb9e7048d991032591"
+    },
+    {
+      "label": "language_final_adamw_b8_lr0p001_s2",
+      "seconds": 300.25608120000106,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "71b1e041904a4d6797f578214813b817"
+    },
+    {
+      "label": "language_final_ns5_b8_lr0p02_s2",
+      "seconds": 367.5335689000003,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "75b6cc3d80844fe082509234a5192924"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s0",
+      "seconds": 0.36987890000091284,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4a778636a58049d294702725560c3eab"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s0",
+      "seconds": 0.4199834999999439,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "724d05151db140888546759886e663fb"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s0",
+      "seconds": 0.40994169999976293,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4d439821a5b24d4fbe490adde721ac9e"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s1",
+      "seconds": 0.35299010000017006,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "36a7f2f4df974303a23bb4fb119f3e12"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s1",
+      "seconds": 0.3274784000004729,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1f4a2b16e6d148d38ba3cf9713286327"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s1",
+      "seconds": 0.3936874999999418,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6299c82f91984f47945d400d4563c95c"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s2",
+      "seconds": 0.4492639000000054,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "58a940a2d0d44e45b12f5fd2c4f9b119"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s2",
+      "seconds": 0.4358828000003996,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4b6d1ec4bf134758bce671a353edbedb"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s2",
+      "seconds": 0.44525029999931576,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ad710ec02689416f928323e8bd9c07f4"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s0",
+      "seconds": 0.03388489999997546,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c26f2fcbb69a4d14b07001969763800e"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s0",
+      "seconds": 0.029756799998722272,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "205c3ad0ace740658e9e190df250b629"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s0",
+      "seconds": 0.028234600002178922,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c14e15d6b3124aefbe920e0460f778f7"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s1",
+      "seconds": 0.028923999998369254,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f88088e92e4a46a4965d6d22e614c20a"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s1",
+      "seconds": 0.02815049999844632,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7543084259884bf9823fb36dfb0c2c95"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s1",
+      "seconds": 0.028202299999975367,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0656d544cf6f4bf1b52f9818c9b15512"
+    },
+    {
+      "label": "test_language_final_ns3_b8_lr0p02_s2",
+      "seconds": 0.028298799999902258,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "81d2370323f54f03bcd5adb66a5bbfa7"
+    },
+    {
+      "label": "test_language_final_adamw_b8_lr0p001_s2",
+      "seconds": 0.028780399999959627,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6450573344d94884944c115f63df7740"
+    },
+    {
+      "label": "test_language_final_ns5_b8_lr0p02_s2",
+      "seconds": 0.028399200000421843,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "40f3c7a4e86547248333a87a01ac4cbd"
+    }
+  ],
+  "active": null
+}

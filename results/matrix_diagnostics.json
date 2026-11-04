@@ -1,0 +1,248 @@
+{
+  "input": "same initial true gradient for all NS variants",
+  "rows": [
+    {
+      "condition_number": 1,
+      "seed": 0,
+      "variant": "ns1",
+      "relative_error_F": 0.3852536380290985,
+      "spectral_error": 0.7351945042610168,
+      "min_singular": 0.2648058831691742,
+      "max_singular": 1.094063639640808
+    },
+    {
+      "condition_number": 1,
+      "seed": 0,
+      "variant": "ns3",
+      "relative_error_F": 0.1767198145389557,
+      "spectral_error": 0.31745871901512146,
+      "min_singular": 0.6825413703918457,
+      "max_singular": 1.1325347423553467
+    },
+    {
+      "condition_number": 1,
+      "seed": 0,
+      "variant": "ns5",
+      "relative_error_F": 0.18878121674060822,
+      "spectral_error": 0.3178340494632721,
+      "min_singular": 0.6821659207344055,
+      "max_singular": 1.1275049448013306
+    },
+    {
+      "condition_number": 1,
+      "seed": 1,
+      "variant": "ns1",
+      "relative_error_F": 0.35868769884109497,
+      "spectral_error": 0.6870336532592773,
+      "min_singular": 0.31296685338020325,
+      "max_singular": 1.0659139156341553
+    },
+    {
+      "condition_number": 1,
+      "seed": 1,
+      "variant": "ns3",
+      "relative_error_F": 0.20689986646175385,
+      "spectral_error": 0.31787362694740295,
+      "min_singular": 0.682127058506012,
+      "max_singular": 1.1321163177490234
+    },
+    {
+      "condition_number": 1,
+      "seed": 1,
+      "variant": "ns5",
+      "relative_error_F": 0.21996143460273743,
+      "spectral_error": 0.31815484166145325,
+      "min_singular": 0.6818452477455139,
+      "max_singular": 1.1135823726654053
+    },
+    {
+      "condition_number": 1,
+      "seed": 2,
+      "variant": "ns1",
+      "relative_error_F": 0.394222229719162,
+      "spectral_error": 0.7513015866279602,
+      "min_singular": 0.24869833886623383,
+      "max_singular": 1.077556848526001
+    },
+    {
+      "condition_number": 1,
+      "seed": 2,
+      "variant": "ns3",
+      "relative_error_F": 0.19223368167877197,
+      "spectral_error": 0.31791847944259644,
+      "min_singular": 0.6820812225341797,
+      "max_singular": 1.1339471340179443
+    },
+    {
+      "condition_number": 1,
+      "seed": 2,
+      "variant": "ns5",
+      "relative_error_F": 0.18347787857055664,
+      "spectral_error": 0.3069702088832855,
+      "min_singular": 0.6930297613143921,
+      "max_singular": 1.1202869415283203
+    },
+    {
+      "condition_number": 10,
+      "seed": 0,
+      "variant": "ns1",
+      "relative_error_F": 0.4940209686756134,
+      "spectral_error": 0.8224769830703735,
+      "min_singular": 0.17752325534820557,
+      "max_singular": 1.183384656906128
+    },
+    {
+      "condition_number": 10,
+      "seed": 0,
+      "variant": "ns3",
+      "relative_error_F": 0.18515893816947937,
+      "spectral_error": 0.3181329369544983,
+      "min_singular": 0.6818671226501465,
+      "max_singular": 1.1982226371765137
+    },
+    {
+      "condition_number": 10,
+      "seed": 0,
+      "variant": "ns5",
+      "relative_error_F": 0.18095552921295166,
+      "spectral_error": 0.31680232286453247,
+      "min_singular": 0.6831977367401123,
+      "max_singular": 1.120603084564209
+    },
+    {
+      "condition_number": 10,
+      "seed": 1,
+      "variant": "ns1",
+      "relative_error_F": 0.4778555631637573,
+      "spectral_error": 0.8327758312225342,
+      "min_singular": 0.16722404956817627,
+      "max_singular": 1.1786106824874878
+    },
+    {
+      "condition_number": 10,
+      "seed": 1,
+      "variant": "ns3",
+      "relative_error_F": 0.18825466930866241,
+      "spectral_error": 0.3168886601924896,
+      "min_singular": 0.6831112504005432,
+      "max_singular": 1.2023670673370361
+    },
+    {
+      "condition_number": 10,
+      "seed": 1,
+      "variant": "ns5",
+      "relative_error_F": 0.20275245606899261,
+      "spectral_error": 0.31816884875297546,
+      "min_singular": 0.6818314790725708,
+      "max_singular": 1.1338274478912354
+    },
+    {
+      "condition_number": 10,
+      "seed": 2,
+      "variant": "ns1",
+      "relative_error_F": 0.506508469581604,
+      "spectral_error": 0.8752567172050476,
+      "min_singular": 0.12474358826875687,
+      "max_singular": 1.1917994022369385
+    },
+    {
+      "condition_number": 10,
+      "seed": 2,
+      "variant": "ns3",
+      "relative_error_F": 0.16045129299163818,
+      "spectral_error": 0.314675897359848,
+      "min_singular": 0.6853244304656982,
+      "max_singular": 1.1782265901565552
+    },
+    {
+      "condition_number": 10,
+      "seed": 2,
+      "variant": "ns5",
+      "relative_error_F": 0.17158366739749908,
+      "spectral_error": 0.28148597478866577,
+      "min_singular": 0.7185145020484924,
+      "max_singular": 1.1333870887756348
+    },
+    {
+      "condition_number": 100,
+      "seed": 0,
+      "variant": "ns1",
+      "relative_error_F": 0.6269704103469849,
+      "spectral_error": 0.9411982893943787,
+      "min_singular": 0.05880172178149223,
+      "max_singular": 1.2005270719528198
+    },
+    {
+      "condition_number": 100,
+      "seed": 0,
+      "variant": "ns3",
+      "relative_error_F": 0.1870032101869583,
+      "spectral_error": 0.34411385655403137,
+      "min_singular": 0.6558861136436462,
+      "max_singular": 1.176237940788269
+    },
+    {
+      "condition_number": 100,
+      "seed": 0,
+      "variant": "ns5",
+      "relative_error_F": 0.21000869572162628,
+      "spectral_error": 0.3162705600261688,
+      "min_singular": 0.6837291121482849,
+      "max_singular": 1.1271010637283325
+    },
+    {
+      "condition_number": 100,
+      "seed": 1,
+      "variant": "ns1",
+      "relative_error_F": 0.6115217208862305,
+      "spectral_error": 0.9488921761512756,
+      "min_singular": 0.051107678562402725,
+      "max_singular": 1.1919978857040405
+    },
+    {
+      "condition_number": 100,
+      "seed": 1,
+      "variant": "ns3",
+      "relative_error_F": 0.21853868663311005,
+      "spectral_error": 0.4212528169155121,
+      "min_singular": 0.5787469148635864,
+      "max_singular": 1.1847530603408813
+    },
+    {
+      "condition_number": 100,
+      "seed": 1,
+      "variant": "ns5",
+      "relative_error_F": 0.2033788114786148,
+      "spectral_error": 0.31700801849365234,
+      "min_singular": 0.6829919219017029,
+      "max_singular": 1.1339589357376099
+    },
+    {
+      "condition_number": 100,
+      "seed": 2,
+      "variant": "ns1",
+      "relative_error_F": 0.6286085247993469,
+      "spectral_error": 0.9589250683784485,
+      "min_singular": 0.04107482358813286,
+      "max_singular": 1.1850005388259888
+    },
+    {
+      "condition_number": 100,
+      "seed": 2,
+      "variant": "ns3",
+      "relative_error_F": 0.20037776231765747,
+      "spectral_error": 0.5271177291870117,
+      "min_singular": 0.47288215160369873,
+      "max_singular": 1.1828993558883667
+    },
+    {
+      "condition_number": 100,
+      "seed": 2,
+      "variant": "ns5",
+      "relative_error_F": 0.16699214279651642,
+      "spectral_error": 0.2979591190814972,
+      "min_singular": 0.7020409107208252,
+      "max_singular": 1.1343226432800293
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=75"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "optcourse-research"
+version = "0.1.0"
+description = "Reproducible Muon and AdamW course experiments"
+requires-python = ">=3.11,<3.13"
+dependencies = ["torch==2.7.1", "numpy==1.26.4", "matplotlib==3.9.4", "filelock==4.2.4"]
+
+[project.optional-dependencies]
+dev = ["pytest==8.3.5"]
+
+[project.scripts]
+optcourse = "optcourse.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["src"]
+markers = ["training: opt-in end-to-end training verification"]
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = { index = "pytorch-cu128" }

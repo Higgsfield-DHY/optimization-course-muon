@@ -1,0 +1,7 @@
+torch==2.7.1
+numpy==1.26.4
+matplotlib==3.9.4
+filelock==4.2.4
+
+[dev]
+pytest==8.3.5

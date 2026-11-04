@@ -1,0 +1,32 @@
+[run]
+name = "matrix_final_svd_k1"
+task = "matrix"
+seed = 2
+device = "cpu"
+output_root = "runs/course_v1/matrix"
+phase = "final"
+cohort = "course_v1"
+
+[optimizer]
+name = "muon"
+lr = 0.05
+weight_decay = 0.0
+betas = [0.9, 0.95]
+eps = 1e-08
+momentum = 0.95
+nesterov = true
+ns_steps = 5
+ns_eps = 1e-07
+method = "svd"
+aspect_scale = false
+aux_lr = 0.0003
+normalization = "max"
+
+[matrix]
+rows = 32
+cols = 16
+condition_number = 1.0
+noise_std = 0.0
+steps = 1000
+log_every = 10
+checkpoint_every = 100

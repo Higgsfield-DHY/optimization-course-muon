@@ -1,0 +1,62 @@
+{
+  "final_runs": 54,
+  "test_runs": 9,
+  "gpu_seconds": 3507.4571810862326,
+  "all_checks_passed": true,
+  "per_seed_test": [
+    {
+      "variant": "adamw",
+      "seed": 0,
+      "best_step": 2000,
+      "test_loss": 1.596264557545253
+    },
+    {
+      "variant": "ns5",
+      "seed": 0,
+      "best_step": 2000,
+      "test_loss": 1.5677589370401126
+    },
+    {
+      "variant": "ns3",
+      "seed": 0,
+      "best_step": 2000,
+      "test_loss": 1.5694752674895902
+    },
+    {
+      "variant": "ns5",
+      "seed": 1,
+      "best_step": 2000,
+      "test_loss": 1.563317871257914
+    },
+    {
+      "variant": "ns3",
+      "seed": 1,
+      "best_step": 2000,
+      "test_loss": 1.5500008117372626
+    },
+    {
+      "variant": "adamw",
+      "seed": 1,
+      "best_step": 2000,
+      "test_loss": 1.6158128726877625
+    },
+    {
+      "variant": "ns3",
+      "seed": 2,
+      "best_step": 2000,
+      "test_loss": 1.5544420028314692
+    },
+    {
+      "variant": "adamw",
+      "seed": 2,
+      "best_step": 2000,
+      "test_loss": 1.609778272100757
+    },
+    {
+      "variant": "ns5",
+      "seed": 2,
+      "best_step": 1900,
+      "test_loss": 1.5566257421469625
+    }
+  ]
+}

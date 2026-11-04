@@ -1,0 +1,22 @@
+{
+  "schema_version": 1,
+  "encoding": "raw_utf8_bytes",
+  "vocabulary_size": 256,
+  "source_url": "https://raw.githubusercontent.com/karpathy/char-rnn/6f9487a6fe5b420b7ca9afb0d7c078e37c1d1b4e/data/tinyshakespeare/input.txt",
+  "source_sha256": "86c4e6aa9db7c042ec79f339dcb96d42b0075e16b8fc2e86bf0ca57e2dc565ed",
+  "split_method": "contiguous_no_overlap",
+  "splits": {
+    "train": {
+      "bytes": 1003854,
+      "sha256": "a9e24e23a1ec77744dad26844bfd5a09b6e041954e1eef0000e7f24cba6db735"
+    },
+    "val": {
+      "bytes": 55770,
+      "sha256": "c64e90c160750d91a9d2d9b1ace5eab1a440f5a1701d32a8e97a179b7839f1c8"
+    },
+    "test": {
+      "bytes": 55770,
+      "sha256": "8b5a8c8af45905547ad03b7aae6980a277a5dd78924a6e6ac64b75d63d7d40bd"
+    }
+  }
+}

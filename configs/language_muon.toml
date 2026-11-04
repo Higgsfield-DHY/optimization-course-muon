@@ -1,0 +1,27 @@
+[run]
+name = "language_muon"
+task = "language"
+seed = 0
+device = "cuda"
+
+[optimizer]
+name = "muon"
+lr = 0.02
+aux_lr = 0.0003
+weight_decay = 0.01
+momentum = 0.95
+nesterov = true
+method = "ns"
+ns_steps = 5
+aspect_scale = true
+
+[language]
+data_dir = "data/shakespeare_byte"
+n_layer = 6
+n_head = 4
+n_embd = 256
+block_size = 128
+batch_size = 8
+grad_accum = 4
+max_steps = 1000
+warmup_steps = 100
