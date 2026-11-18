@@ -1,0 +1,51 @@
+\section{有限深度驻点界的证明}\label{app:v2convergence}
+记$\tau_\ell$为动量的Frobenius范数，$M_\ell$的奇异值为$\sigma_{\ell,i}$。
+对非零块，令$s_i=\sigma_{\ell,i}/\tau_\ell$。谱变换和幅度匹配给出
+\[
+ \inner{M_\ell}{D_\ell}
+   = R_\ell\tau_\ell\frac{\sum_i s_i q_k(s_i)}
+                      {(\sum_i q_k(s_i)^2)^{1/2}}
+   \ \ge\ \alpha R_\ell\norm{M_\ell}_F .
+\]
+零动量块的两端均为零。记$e=M-g$，应用三角不等式及Cauchy--Schwarz不等式，
+\begin{align}
+ \inner{g}{D}
+ &\ge \alpha\sum_\ell R_\ell\norm{g_\ell}_F
+        -(1+\alpha)\sum_\ell R_\ell\norm{e_\ell}_F\\
+ &\ge C\norm{g}-(1+\alpha)S\norm{e}.
+\end{align}
+$\norm{D}\le S$且$0\le\eta\lambda\le1/(2T)$，
+因而$\norm{w_t}\le\norm{w_0}+\eta St$，$\lambda\norm{w_t}\le C/2$。
+令$H_t=D_t+\lambda w_t$，可得
+$\norm{H_t}\le S'$和
+$\inner{g_t}{H_t}\ge(C/2)\norm{g_t}-(1+\alpha)S\norm{e_t}$。
+光滑性给出
+\[
+ f(w_{t+1})\le f(w_t)-\eta\inner{g_t}{H_t}
+                    +(L_f\eta^2/2)(S')^2 .
+\]
+
+展开动量递推。令$\zeta_i=G_i-g_i$，得到
+\begin{align}
+ e_t&=-\beta^{t+2}g_0-\sum_{i=1}^{t}\beta^{t-i+2}(g_i-g_{i-1})+N_t,\\
+ N_t&=(1-\beta)\sum_{i=0}^{t-1}\beta^{t-i+1}\zeta_i
+                     +(1-\beta^2)\zeta_t .
+\end{align}
+历史条件无偏性使噪声的交叉项期望为零，并给出
+\[
+ \mathbb E\norm{N_t}^2
+ \le \sigma^2\left[\frac{(1-\beta)^2}{1-\beta^2}+(1-\beta^2)^2\right]
+ \le 3\sigma^2(1-\beta).
+\]
+第二个不等号使用$(1-\beta)^2/(1-\beta^2)\le1-\beta$和
+$(1-\beta^2)^2\le2(1-\beta)$。
+梯度漂移每步至多为$L_f\eta S'$。
+对初始化项和漂移项各求一次几何和，得到
+\[
+ \frac1T\sum_{t=0}^{T-1}\mathbb E\norm{e_t}
+ \le \frac{\norm{g_0}}{T(1-\beta)}
+       +\frac{L_f\eta S'}{1-\beta}
+       +\sigma\sqrt{3(1-\beta)}.
+\]
+在下降不等式中代入此式，对迭代求和并使用$f(w_T)\ge f_*$，
+即得定理\ref{thm:v2convergence}。

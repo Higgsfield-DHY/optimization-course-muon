@@ -1,0 +1,26 @@
+[
+  {
+    "exponent": 0.0,
+    "states": 180,
+    "tied_states": 90,
+    "error_winner_suboptimal": 97
+  },
+  {
+    "exponent": 0.5,
+    "states": 270,
+    "tied_states": 0,
+    "error_winner_suboptimal": 236
+  },
+  {
+    "exponent": 1.0,
+    "states": 270,
+    "tied_states": 0,
+    "error_winner_suboptimal": 237
+  },
+  {
+    "exponent": 2.0,
+    "states": 270,
+    "tied_states": 0,
+    "error_winner_suboptimal": 264
+  }
+]

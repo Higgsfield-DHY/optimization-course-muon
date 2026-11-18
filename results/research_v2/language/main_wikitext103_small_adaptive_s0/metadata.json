@@ -1,0 +1,65 @@
+{
+  "config": {
+    "seed": 0,
+    "method": "adaptive",
+    "model": {
+      "depth": 4,
+      "width": 384,
+      "heads": 6,
+      "context": 256,
+      "vocabulary": 50304
+    },
+    "scale": "small",
+    "corpus": "wikitext103",
+    "steps": 1000,
+    "batch_size": 4,
+    "accumulation": 8,
+    "lr": 0.003,
+    "aux_lr": 0.001,
+    "weight_decay": 0.1,
+    "device": "cuda",
+    "precision": "bfloat16",
+    "ns_dtype": "bfloat16",
+    "validation_every": 250,
+    "validation_targets": 262144,
+    "log_every": 50,
+    "warmup_steps": 100,
+    "probe_interval": 100,
+    "probe_batch_size": 16,
+    "phase": "final",
+    "cohort": "main",
+    "save_anchors": true,
+    "anchor_steps": [
+      250,
+      500,
+      1000
+    ]
+  },
+  "config_fingerprint": "033f455af408a022c1528975a620604bd7078d9b138c0795842bf7315bae26bb",
+  "dataset_fingerprint": "3a91ef4f77c98e13cdeb1f247f09810a2dc656be9e6e077199acd9b5268a7b49",
+  "source_hashes": {
+    "geometry.py": "37e820b312a3aa6548441140a0b4ff6e08a4f652e4f0a7cff21779b59ee8f89e",
+    "instruments.py": "6126cc8c391f1fda8c7c2d02327ab5a502fbe0c64548557e7e04d0f86b0e35f5",
+    "optimizer.py": "29a31f880cdc3317c098a06c31241bf0b7eed918d486beffdcebf1fb7e19cd74",
+    "language.py": "31fd2af513f9464e7a25968137c93b474e5f5d3e230baff8eb8df7e8f4b29ed2",
+    "data.py": "3caa5806b8fbfbead71dc53972b9b12b37704695f8141a691a965dc68a77b06c",
+    "training.py": "a99e3269f99c01ed80e74434c7f43acd6f2df5e02e30bc5d1ccb08417ad30ef6",
+    "../model.py": "350052b18145372763b11b3cb7dc67cf7535d4de1a64ae579657cc0db6a37f4d"
+  },
+  "parameter_count": 26499840,
+  "hidden_parameters": 7077888,
+  "auxiliary_parameters": 19421952,
+  "status": "COMPLETED",
+  "seed": 0,
+  "method": "adaptive",
+  "budget_provenance": {
+    "ledger_path": "runs/research_v2/gpu_budget.json",
+    "session_id": "4754febf3ccb44e4997b9a40ab4add9d"
+  },
+  "failure_reason": null,
+  "completed_steps": 1000,
+  "best_validation": 4.816613789107086,
+  "best_step": 1000,
+  "elapsed_seconds": 259.40640020000137,
+  "peak_memory_MiB": 1714.2822265625
+}

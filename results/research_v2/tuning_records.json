@@ -1,0 +1,472 @@
+[
+  {
+    "id": "tune_wikitext103_small_adamw_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.682654678821564
+  },
+  {
+    "id": "tune_wikitext103_small_adamw_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.65506611764431
+  },
+  {
+    "id": "tune_wikitext103_small_adamw_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.919838860630989
+  },
+  {
+    "id": "tune_wikitext103_small_adamw_lr0p001_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.651820458471775
+  },
+  {
+    "id": "tune_wikitext103_small_adamw_lr0p0003_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.672635726630688
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.750864312052727
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.796301491558552
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 6.092542737722397
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p0001_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 9.999999999999999e-05,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.7487286403775215
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr3p33333e-05_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 3.333333333333333e-05,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.755269318819046
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p0001_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 9.999999999999999e-05,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.7313768193125725
+  },
+  {
+    "id": "tune_wikitext103_small_momentum_lr0p0003_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "momentum",
+    "lr": 0.0003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.736222147941589
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.534584395587444
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.420887216925621
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.401729740202427
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p009_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.009000000000000001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.823958165943623
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p003_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.40165913105011
+  },
+  {
+    "id": "tune_wikitext103_small_ns3_lr0p001_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns3",
+    "lr": 0.001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.401478983461857
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.547907888889313
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.424201853573322
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.358378075063229
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p009_s101",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.009000000000000001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.395957916975021
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p003_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.338944658637047
+  },
+  {
+    "id": "tune_wikitext103_small_ns5_lr0p009_s102",
+    "corpus": "wikitext103",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.009000000000000001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.3724275380373
+  },
+  {
+    "id": "tune_wikitext103_medium_adamw_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.63451375067234
+  },
+  {
+    "id": "tune_wikitext103_medium_adamw_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.611011847853661
+  },
+  {
+    "id": "tune_wikitext103_medium_adamw_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "adamw",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 6.006331875920296
+  },
+  {
+    "id": "tune_wikitext103_medium_adamw_lr0p001_s102",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.60269621014595
+  },
+  {
+    "id": "tune_wikitext103_medium_adamw_lr0p0003_s102",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.627328976988792
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p0003_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.41716443747282
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p001_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.295427083969116
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p003_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.218568295240402
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p009_s101",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.009000000000000001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 5.353565491735935
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p003_s102",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.209438964724541
+  },
+  {
+    "id": "tune_wikitext103_medium_ns5_lr0p001_s102",
+    "corpus": "wikitext103",
+    "scale": "medium",
+    "method": "ns5",
+    "lr": 0.001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 5.275968991219997
+  },
+  {
+    "id": "tune_tinystories_small_adamw_lr0p0003_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 3.205394420772791
+  },
+  {
+    "id": "tune_tinystories_small_adamw_lr0p001_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 3.0006880052387714
+  },
+  {
+    "id": "tune_tinystories_small_adamw_lr0p003_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 3.257598377764225
+  },
+  {
+    "id": "tune_tinystories_small_adamw_lr0p001_s102",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 2.9871803149580956
+  },
+  {
+    "id": "tune_tinystories_small_adamw_lr0p0003_s102",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "adamw",
+    "lr": 0.0003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 3.1874465197324753
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p0003_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.0003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 3.1729806028306484
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p001_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 2.8678443394601345
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p003_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 2.6624769531190395
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p009_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.009000000000000001,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 2.660265363752842
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p027_s101",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.027000000000000003,
+    "seed": 101,
+    "status": "COMPLETED",
+    "score": 3.61203820630908
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p009_s102",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.009000000000000001,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 2.6620546765625477
+  },
+  {
+    "id": "tune_tinystories_small_ns5_lr0p003_s102",
+    "corpus": "tinystories",
+    "scale": "small",
+    "method": "ns5",
+    "lr": 0.003,
+    "seed": 102,
+    "status": "COMPLETED",
+    "score": 2.6737744994461536
+  }
+]

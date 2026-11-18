@@ -1,0 +1,11 @@
+{
+  "formal_runs": 54,
+  "test_runs": 54,
+  "frozen_anchors": 36,
+  "same_momentum_reversals": 30,
+  "paired_depth_controls": 3,
+  "gpu_seconds": 26898.923622337596,
+  "checkpoints_verified": true,
+  "maximum_hidden_rms_deviation": 4.58229297839452e-08,
+  "late_schedule_runs": 2
+}

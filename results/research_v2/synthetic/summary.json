@@ -1,0 +1,15 @@
+{
+  "phase_rows": 21504,
+  "matrix_intervention_rows": 1890,
+  "trajectory_runs": 400,
+  "paired_seeds": 10,
+  "fixed_maximum_curvature": 1.0,
+  "rms": 0.2,
+  "methods": [
+    "ns0",
+    "ns1",
+    "ns3",
+    "ns5",
+    "polar"
+  ]
+}

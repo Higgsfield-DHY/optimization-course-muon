@@ -1,0 +1,182 @@
+{
+  "main_wikitext103_small_ns5_s0_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s0_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s0_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s0_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s0_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s0_step-1000/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s0_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s0_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s0_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s0_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s0_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s0_step-1000/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s1_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s1_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s1_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s1_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s1_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s1_step-1000/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s1_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s1_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s1_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s1_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s1_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s1_step-1000/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s2_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s2_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s2_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s2_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_ns5_s2_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_ns5_s2_step-1000/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s2_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s2_step-250/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s2_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s2_step-500/result.json",
+    "rows": 30
+  },
+  "main_wikitext103_small_adaptive_s2_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/main_wikitext103_small_adaptive_s2_step-1000/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s0_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s0_step-250/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s0_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s0_step-500/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s0_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s0_step-1000/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s1_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s1_step-250/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s1_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s1_step-500/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s1_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s1_step-1000/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s2_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s2_step-250/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s2_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s2_step-500/result.json",
+    "rows": 30
+  },
+  "scale_wikitext103_medium_ns5_s2_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/scale_wikitext103_medium_ns5_s2_step-1000/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s0_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s0_step-250/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s0_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s0_step-500/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s0_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s0_step-1000/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s1_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s1_step-250/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s1_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s1_step-500/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s1_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s1_step-1000/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s2_step-250": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s2_step-250/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s2_step-500": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s2_step-500/result.json",
+    "rows": 30
+  },
+  "transfer_tinystories_small_ns5_s2_step-1000": {
+    "status": "COMPLETED",
+    "path": "runs/research_v2/probes/transfer_tinystories_small_ns5_s2_step-1000/result.json",
+    "rows": 30
+  }
+}

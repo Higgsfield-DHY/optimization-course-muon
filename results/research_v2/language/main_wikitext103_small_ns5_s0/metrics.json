@@ -1,0 +1,170 @@
+[
+  {
+    "step": 0,
+    "tokens": 0,
+    "train_loss": null,
+    "validation_loss": 10.91165405381748,
+    "validation_targets": 251048,
+    "elapsed_seconds": 2.616775000002235
+  },
+  {
+    "step": 50,
+    "tokens": 409600,
+    "train_loss": 7.061420559883118,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 14.60258579999936
+  },
+  {
+    "step": 100,
+    "tokens": 819200,
+    "train_loss": 6.400060832500458,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 25.55120850000094
+  },
+  {
+    "step": 150,
+    "tokens": 1228800,
+    "train_loss": 6.077976167201996,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 36.411502799997834
+  },
+  {
+    "step": 200,
+    "tokens": 1638400,
+    "train_loss": 5.882205009460449,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 47.317784999999276
+  },
+  {
+    "step": 250,
+    "tokens": 2048000,
+    "train_loss": 5.754346489906311,
+    "validation_loss": 5.670209494388026,
+    "validation_targets": 251048,
+    "elapsed_seconds": 61.300459999998566
+  },
+  {
+    "step": 300,
+    "tokens": 2457600,
+    "train_loss": 5.511746525764465,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 75.07212889999937
+  },
+  {
+    "step": 350,
+    "tokens": 2867200,
+    "train_loss": 5.5864105224609375,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 85.9908789000001
+  },
+  {
+    "step": 400,
+    "tokens": 3276800,
+    "train_loss": 5.384922921657562,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 96.86867960000018
+  },
+  {
+    "step": 450,
+    "tokens": 3686400,
+    "train_loss": 5.317136168479919,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 107.68010219999996
+  },
+  {
+    "step": 500,
+    "tokens": 4096000,
+    "train_loss": 5.201368689537048,
+    "validation_loss": 5.200555942219707,
+    "validation_targets": 251048,
+    "elapsed_seconds": 121.7570452
+  },
+  {
+    "step": 550,
+    "tokens": 4505600,
+    "train_loss": 5.1992780566215515,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 135.20236659999864
+  },
+  {
+    "step": 600,
+    "tokens": 4915200,
+    "train_loss": 5.088871538639069,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 146.06222590000107
+  },
+  {
+    "step": 650,
+    "tokens": 5324800,
+    "train_loss": 4.860910177230835,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 156.97382049999942
+  },
+  {
+    "step": 700,
+    "tokens": 5734400,
+    "train_loss": 5.018905162811279,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 167.8238453999984
+  },
+  {
+    "step": 750,
+    "tokens": 6144000,
+    "train_loss": 5.110958576202393,
+    "validation_loss": 4.945770291433306,
+    "validation_targets": 251048,
+    "elapsed_seconds": 181.5793937999988
+  },
+  {
+    "step": 800,
+    "tokens": 6553600,
+    "train_loss": 4.99670684337616,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 193.83463049999773
+  },
+  {
+    "step": 850,
+    "tokens": 6963200,
+    "train_loss": 4.985534429550171,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 204.80914080000002
+  },
+  {
+    "step": 900,
+    "tokens": 7372800,
+    "train_loss": 4.950087070465088,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 215.7860550000005
+  },
+  {
+    "step": 950,
+    "tokens": 7782400,
+    "train_loss": 4.7999767661094666,
+    "validation_loss": null,
+    "validation_targets": null,
+    "elapsed_seconds": 226.61273839999922
+  },
+  {
+    "step": 1000,
+    "tokens": 8192000,
+    "train_loss": 4.933871686458588,
+    "validation_loss": 4.816602349642195,
+    "validation_targets": 251048,
+    "elapsed_seconds": 240.73008090000076
+  }
+]

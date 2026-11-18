@@ -1,0 +1,542 @@
+{
+  "core_steps": 1000,
+  "ablation_steps": 1000,
+  "long_steps": 2500,
+  "token_batch": 8192,
+  "main_methods": [
+    "adamw",
+    "momentum",
+    "ns1",
+    "ns3",
+    "ns5",
+    "adaptive",
+    "replay"
+  ],
+  "ablation_methods": [
+    "adam_rms",
+    "canonical5"
+  ],
+  "confirmation_methods": [
+    "adamw",
+    "ns5",
+    "adaptive"
+  ],
+  "seeds": [
+    0,
+    1,
+    2
+  ],
+  "tuning_steps": 400,
+  "tuning_seed": 101,
+  "confirmation_seed": 102,
+  "tuning_grid": [
+    0.0003,
+    0.001,
+    0.003
+  ],
+  "core_formal_runs": 54,
+  "projection_seconds": 23749.810457822576,
+  "projected_update_latency": {
+    "small": 0.26570616600103675,
+    "medium": 0.39523996000061745
+  },
+  "prior_used_seconds": 3870.9240626863248,
+  "expected_jobs": [
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "momentum",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns1",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "replay",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "momentum",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns1",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "replay",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "momentum",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns1",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "replay",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adam_rms",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "canonical5",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adam_rms",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "canonical5",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "adam_rms",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "ablation",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "canonical5",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adamw",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "ns5",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adaptive",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adamw",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "ns5",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adaptive",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adamw",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "ns5",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "scale",
+      "corpus": "wikitext103",
+      "scale": "medium",
+      "method": "adaptive",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adamw",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "transfer",
+      "corpus": "tinystories",
+      "scale": "small",
+      "method": "adaptive",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 0,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 0,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 1,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 1,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns3",
+      "seed": 2,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "long",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "ns5",
+      "seed": 2,
+      "steps": 2500,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "criterion",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "spectral",
+      "seed": 0,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "criterion",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "spectral",
+      "seed": 1,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    },
+    {
+      "cohort": "criterion",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "method": "spectral",
+      "seed": 2,
+      "steps": 1000,
+      "status": "NOT_RUN"
+    }
+  ],
+  "amendments": [
+    {
+      "stage": "before_formal",
+      "reason": "register exact polar-error policy and larger independent probe batches after instrument calibration"
+    }
+  ],
+  "online_probe_sequences": 16,
+  "frozen_probe_B_sequences": 4,
+  "frozen_probe_C_sequences": 16,
+  "offline_threads": 2
+}

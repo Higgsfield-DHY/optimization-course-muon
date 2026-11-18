@@ -1,0 +1,60 @@
+对隐藏层矩阵$W_\ell$，令当前批梯度为$G_{t,\ell}$，动量递推为
+\begin{equation}
+ B_{t,\ell}=\beta B_{t-1,\ell}+(1-\beta)G_{t,\ell},\qquad
+ M_{t,\ell}=\beta B_{t,\ell}+(1-\beta)G_{t,\ell}.
+\end{equation}
+由$X_0=M/\norm{M}_F$出发，经验NS采用
+\begin{equation}\label{eq:v2ns}
+ X_{j+1}=3.4445X_j-4.7750(X_jX_j^{\mathsf T})X_j
+              +2.0315(X_jX_j^{\mathsf T})^2X_j.
+\end{equation}
+记$Q_k(M)=X_k$，零矩阵的变换取零。经典三次NS采用$X_{j+1}=1.5X_j-0.5X_jX_j^{\mathsf T}X_j$，
+精确极因子由紧致SVD计算。经验深度$k$作为干预变量，谱误差由实际输出测量。
+
+设矩阵含$d_\ell$个元素。主对照使用
+\begin{equation}\label{eq:v2rms}
+ D_{k,\ell}=0.2\sqrt{d_\ell}\,
+       \frac{Q_k(M_{t,\ell})}{\norm{Q_k(M_{t,\ell})}_F},
+ \qquad \operatorname{RMS}(D_{k,\ell})=0.2.
+\end{equation}
+$M_{t,\ell}=0$时直接取$D_{k,\ell}=0$。
+各深度使用相同动量、矩阵学习率、衰减和训练批次。
+嵌入、输出与一维参数交给同一配置的AdamW\citep{loshchilov2019adamw}。输出头与词嵌入共享权重。
+完整候选步长写成$S_k=\eta_t D_k+U_t$，其中$D_k$在辅助参数位置为零，$U_t$包含共享辅助更新及权重衰减。
+参数按$w_{t+1}=w_t-S_k$更新。
+
+幅度匹配动量直接规范化$M_{t,\ell}$，RMS-Adam则规范化AdamW的非衰减方向
+$\widehat m/(\sqrt{\widehat v}+\epsilon)$。Moonlight尺度消融保留$Q_5$，
+对$m_\ell\times n_\ell$矩阵取$D_{5,\ell}=0.2\sqrt{\max(m_\ell,n_\ell)}\,Q_5(M_{t,\ell})$\citep{liu2025scalable}。
+
+对逐矩阵RMS相同的极因子$P_\ell$，定义归一化谱误差
+\begin{equation}
+ E_k^2=\frac{\sum_\ell\norm{D_{k,\ell}-P_\ell}_F^2}
+                  {\sum_\ell\norm{P_\ell}_F^2}.
+\end{equation}
+同时记录动量的稳定秩、奇异值分位数和候选更新的梯度对齐。
+
+\paragraph{独立批次的目标测量。}
+梯度批次$A$生成完整候选，包括共享辅助更新。批次$B$用来计算
+\begin{equation}\label{eq:v2scores}
+ a_k=\inner{\nabla f_B(w)}{S_k},\qquad
+ b_k=\inner{S_k}{\nabla^2f_B(w)S_k},\qquad
+ \widehat\Delta_k=a_k-\tfrac12b_k.
+\end{equation}
+Hessian--向量积对完整参数向量求导，保留跨矩阵与辅助参数的交叉项。
+另一批次$C$测量$\Delta_{C,k}=f_C(w)-f_C(w-S_k)$。
+每次测量后恢复起点参数。各候选共享起点、数据和计算精度。
+
+\paragraph{Probe-NS。}
+每隔100次更新，Probe-NS从训练集另取4096个token，评价$k\in\{1,3,5\}$的完整候选，选择
+\begin{equation}
+ k_t=\operatorname*{arg\,min}_{k\in\{1,3,5\}} f_B(w-S_k).
+\end{equation}
+相同损失取较小深度，选定深度沿用到下一次探测。第一次探测前使用深度5。
+阶段匹配重放将同一种子的选择点分成四段。存在不同排列的段从其他排列中均匀抽样，
+最后一次选择保留原位，使各深度的实际更新次数与探测计算保持一致。
+两者的差异衡量当次目标反馈相对于阶段频率安排的收益。
+
+谱误差选择器Error-NS使用相同的候选集、学习率和选择周期，以$E_k$最小为准选择深度。
+该策略用紧致SVD获得参考极因子，将矩阵函数的近似目标直接作为选择依据。
+它与Probe-NS的配对比较考察两种评价目标带来的训练差异。

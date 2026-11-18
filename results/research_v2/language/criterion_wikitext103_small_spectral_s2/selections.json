@@ -1,0 +1,162 @@
+[
+  {
+    "step": 100,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9911463012327062
+      },
+      "ns3": {
+        "polar_error": 0.6057544425222153
+      },
+      "ns5": {
+        "polar_error": 0.2320878488847219
+      }
+    },
+    "probe_seconds": 1.9516578999973717
+  },
+  {
+    "step": 200,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9637009489174211
+      },
+      "ns3": {
+        "polar_error": 0.5614509594399532
+      },
+      "ns5": {
+        "polar_error": 0.20851497977638817
+      }
+    },
+    "probe_seconds": 1.927618599998823
+  },
+  {
+    "step": 300,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9466501412838898
+      },
+      "ns3": {
+        "polar_error": 0.5488631432946073
+      },
+      "ns5": {
+        "polar_error": 0.20415358749803586
+      }
+    },
+    "probe_seconds": 1.9350847999958205
+  },
+  {
+    "step": 400,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9372694278425328
+      },
+      "ns3": {
+        "polar_error": 0.5428183692173525
+      },
+      "ns5": {
+        "polar_error": 0.20293869483933039
+      }
+    },
+    "probe_seconds": 1.9264054000013857
+  },
+  {
+    "step": 500,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9233666059350074
+      },
+      "ns3": {
+        "polar_error": 0.5359704565849388
+      },
+      "ns5": {
+        "polar_error": 0.2037148039551828
+      }
+    },
+    "probe_seconds": 1.9209774999981164
+  },
+  {
+    "step": 600,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9143663236600352
+      },
+      "ns3": {
+        "polar_error": 0.5301561431805691
+      },
+      "ns5": {
+        "polar_error": 0.20334584083331558
+      }
+    },
+    "probe_seconds": 1.9432060999970417
+  },
+  {
+    "step": 700,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9145381595323402
+      },
+      "ns3": {
+        "polar_error": 0.5320393011719764
+      },
+      "ns5": {
+        "polar_error": 0.20485576233114486
+      }
+    },
+    "probe_seconds": 1.9177039999995031
+  },
+  {
+    "step": 800,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.911344826973096
+      },
+      "ns3": {
+        "polar_error": 0.527772886161346
+      },
+      "ns5": {
+        "polar_error": 0.20325860666167456
+      }
+    },
+    "probe_seconds": 1.9356219999972382
+  },
+  {
+    "step": 900,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.9141945591596632
+      },
+      "ns3": {
+        "polar_error": 0.5311703625093959
+      },
+      "ns5": {
+        "polar_error": 0.20574764403385246
+      }
+    },
+    "probe_seconds": 1.9293883999998798
+  },
+  {
+    "step": 1000,
+    "choice": "ns5",
+    "scores": {
+      "ns1": {
+        "polar_error": 0.909825351714523
+      },
+      "ns3": {
+        "polar_error": 0.5272833351801235
+      },
+      "ns5": {
+        "polar_error": 0.20410744320825205
+      }
+    },
+    "probe_seconds": 1.9286318000013125
+  }
+]

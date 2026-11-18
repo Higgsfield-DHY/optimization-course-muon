@@ -1,0 +1,58 @@
+{
+  "config": {
+    "seed": 0,
+    "method": "ns1",
+    "model": {
+      "depth": 4,
+      "width": 384,
+      "heads": 6,
+      "context": 256,
+      "vocabulary": 50304
+    },
+    "scale": "small",
+    "corpus": "wikitext103",
+    "steps": 1000,
+    "batch_size": 4,
+    "accumulation": 8,
+    "lr": 0.003,
+    "aux_lr": 0.001,
+    "weight_decay": 0.1,
+    "device": "cuda",
+    "precision": "bfloat16",
+    "ns_dtype": "bfloat16",
+    "validation_every": 250,
+    "validation_targets": 262144,
+    "log_every": 50,
+    "warmup_steps": 100,
+    "probe_interval": 100,
+    "probe_batch_size": 16,
+    "phase": "final",
+    "cohort": "main"
+  },
+  "config_fingerprint": "b3ef614f026a3ac46f4b989702ea6a32d0c995c28bee9f9fd948e0970655d290",
+  "dataset_fingerprint": "3a91ef4f77c98e13cdeb1f247f09810a2dc656be9e6e077199acd9b5268a7b49",
+  "source_hashes": {
+    "geometry.py": "37e820b312a3aa6548441140a0b4ff6e08a4f652e4f0a7cff21779b59ee8f89e",
+    "instruments.py": "6126cc8c391f1fda8c7c2d02327ab5a502fbe0c64548557e7e04d0f86b0e35f5",
+    "optimizer.py": "29a31f880cdc3317c098a06c31241bf0b7eed918d486beffdcebf1fb7e19cd74",
+    "language.py": "31fd2af513f9464e7a25968137c93b474e5f5d3e230baff8eb8df7e8f4b29ed2",
+    "data.py": "3caa5806b8fbfbead71dc53972b9b12b37704695f8141a691a965dc68a77b06c",
+    "training.py": "751de549d5c3c81fd94a485c172fa35db87780db0b10b2557ba9681cdd52f518"
+  },
+  "parameter_count": 26499840,
+  "hidden_parameters": 7077888,
+  "auxiliary_parameters": 19421952,
+  "status": "COMPLETED",
+  "seed": 0,
+  "method": "ns1",
+  "budget_provenance": {
+    "ledger_path": "runs/research_v2/gpu_budget.json",
+    "session_id": "765ad5ed610c49ddb91866aec1972fb7"
+  },
+  "failure_reason": null,
+  "completed_steps": 1000,
+  "best_validation": 5.551058175219567,
+  "best_step": 1000,
+  "elapsed_seconds": 226.33311780000076,
+  "peak_memory_MiB": 1737.12939453125
+}

@@ -1,0 +1,140 @@
+先研究一个正定二次目标。记$g=\nabla f(w)$，$H$为Hessian，对给定方向$D$定义
+\begin{equation}\label{eq:v2gain}
+ a(D)=\inner{g}{D},\quad b(D)=\inner{D}{H[D]},\quad
+ \Delta(\eta,D)=\eta a(D)-\frac{\eta^2}{2}b(D).
+\end{equation}
+当$a(D),b(D)>0$时，沿该方向的最优步长与收益为
+\begin{equation}\label{eq:v2optimal}
+ \eta^*(D)=\frac{a(D)}{b(D)},\qquad
+ J(D)=\frac{a(D)^2}{2b(D)}.
+\end{equation}
+$J(cD)=J(D)$对$c>0$成立，因此该指标消除了方向幅度与标量学习率的影响。
+当$H=hI$且$h>0$时，Cauchy--Schwarz不等式给出
+$J(D)\le\norm{g}^2/(2h)$，沿梯度方向取等。
+因此在各向同性曲率下，更新收益由与真实梯度的夹角决定。
+梯度与动量重合且奇异值平坦时，各深度归一化后沿同一个方向。
+
+\begin{theorem}[相同动量下的曲率反转]\label{thm:v2reversal}
+设$u,v$为线性无关的单位Frobenius方向，且$a_u=\inner{g}{u}>0$、$a_v=\inner{g}{v}>0$。
+令$c=\inner{u}{v}$。对$0<\epsilon<1$定义
+\begin{equation}
+ H_u[X]=X-(1-\epsilon)\inner{X}{u}u,\qquad
+ H_v[X]=X-(1-\epsilon)\inner{X}{v}v,
+\end{equation}
+以及$f_i(X)=\inner{g}{X}+\tfrac12\inner{X}{H_i[X]}$，$i\in\{u,v\}$。
+两个目标在$X=0$的梯度相同，Hessian的最大特征值均为1、最小特征值均为$\epsilon$。
+其方向收益满足
+\begin{align}
+ \frac{J_u(u)}{J_u(v)}&=\frac{a_u^2}{a_v^2}
+       \frac{\epsilon+(1-\epsilon)(1-c^2)}{\epsilon},\\
+ \frac{J_v(v)}{J_v(u)}&=\frac{a_v^2}{a_u^2}
+       \frac{\epsilon+(1-\epsilon)(1-c^2)}{\epsilon}.
+\end{align}
+当$\epsilon$充分小时，$u$在$f_u$上更优，$v$在$f_v$上更优，两个收益比均按$\epsilon^{-1}$增长。
+\end{theorem}
+\begin{proof}
+算子$H_u$在$u$方向上的特征值为$\epsilon$，在其正交补上的特征值为1。因此
+\[
+ \inner{u}{H_u[u]}=\epsilon,\qquad
+ \inner{v}{H_u[v]}=1-(1-\epsilon)c^2
+                =\epsilon+(1-\epsilon)(1-c^2).
+\]
+代入式\eqref{eq:v2optimal}得到第一个比值，交换$u,v$得到第二个比值。
+由线性无关性，$1-c^2>0$，两比值在$\epsilon\to0$时均趋于无穷。
+\end{proof}
+
+取相同动量矩阵产生的两个有限NS方向为$u,v$，即可在整个构造中保持候选及其谱误差不变。
+在相同RMS下逐方向优化步长后，曲率置换仍然改变收益排序。
+接下来固定梯度和动量，交换曲率，检验候选排序和理论收益比。
+
+\begin{corollary}[谱信息相同时的选择代价]\label{cor:v2selector}
+考虑从$\{u,v\}$中选取方向的确定性规则，其输入由当前位置的梯度、动量、候选谱误差和Hessian特征值组成。
+在定理\ref{thm:v2reversal}的两个目标上，该规则给出同一选择。
+当$\epsilon$趋于零时，至少一个目标上所选方向与最优候选的收益比以$O(\epsilon)$趋于零。
+\end{corollary}
+\begin{proof}
+两个目标的规则输入逐项相同。若规则选$u$，在目标$f_v$上取定理中第二个收益比的倒数。
+若规则选$v$，在目标$f_u$上取第一个收益比的倒数。两个倒数均为$O(\epsilon)$。
+\end{proof}
+
+\begin{proposition}[二维谱方向的精确分界]\label{prop:v2boundary}
+设$g=(1,\rho)$、$H=\operatorname{diag}(1,\kappa)$，其中$\rho,\kappa>0$。
+比例为$r>0$的方向有收益
+\[
+ J(r)=\frac{(1+\rho r)^2}{2(1+\kappa r^2)}.
+\]
+对$r>s>0$，分界为
+\begin{equation}\label{eq:v2boundary}
+ \kappa_* =\frac{2\rho+\rho^2(r+s)}{r+s+2\rho rs}.
+\end{equation}
+$\kappa<\kappa_*$时$J(r)>J(s)$，$\kappa>\kappa_*$时排序相反。
+连续方向比例的最优值为$r_*=\rho/\kappa$。
+\end{proposition}
+\begin{proof}
+将$J(r)-J(s)$通分，其分子为
+\[
+ (r-s)\big[2\rho+(\rho^2-\kappa)(r+s)-2\rho\kappa rs\big].
+\]
+分母严格为正，解中括号为零得到式\eqref{eq:v2boundary}。
+直接求导可得$J'(r)$的符号由$\rho-\kappa r$决定，得到$r_*$。
+\end{proof}
+
+\begin{proposition}[完整参数步长的局部预测]\label{prop:v2taylor}
+设$f$的Hessian在线段$\{w-tS:0\le t\le1\}$上为$L_H$-Lipschitz。
+对$a=\inner{\nabla f(w)}{S}$、$b=\inner{S}{\nabla^2f(w)S}$，有
+\begin{equation}
+ f(w)-f(w-S)=a-\tfrac12b+R(S),\qquad
+ |R(S)|\le\frac{L_H}{6}\norm{S}^3.
+\end{equation}
+\end{proposition}
+\begin{proof}
+对$\phi(t)=f(w-tS)$应用二阶Taylor公式。
+$|\phi''(t)-\phi''(0)|\le L_H t\norm{S}^3$，积分余项的绝对值至多为
+$L_H\norm{S}^3\int_0^1t(1-t)\,dt=L_H\norm{S}^3/6$。
+\end{proof}
+式\eqref{eq:v2scores}给出该预测的可测版本。
+线性项衡量梯度与完整更新的对齐，二阶项衡量目标沿该更新的曲率代价。
+将$S_k=\eta D_k+U$代入二次型后，交叉项$2\eta\inner{D_k}{H[U]}$随候选变化。
+因此测量完整步长也保留共享更新对排序的影响。
+实验分别比较两者的排序能力，并用独立批次检验预测的迁移。
+
+\subsection{任意有限深度选择下的驻点收敛}\label{sec:v2convergence}
+沿用有限步分析中分离动量误差的思路\cite{wang2026practical,peng2026finitens}，
+这里对所有候选使用同一个逐块幅度和对齐下界。
+以下分析将参数写成矩阵块$w=(W_1,\ldots,W_L)$。内积及范数取各块的Frobenius直积。
+设$f$有下界$f_*$，梯度为$L_f$-Lipschitz，且相对于历史$\mathcal F_t$，
+批梯度$G_t$满足$\mathbb E[G_t\mid\mathcal F_t]=g_t=\nabla f(w_t)$和
+$\mathbb E[\norm{G_t-g_t}^2\mid\mathcal F_t]\le\sigma^2$。
+使用第\ref{sec:v2method}节的Nesterov动量，初始缓冲区为$B_{-1}=0$。
+第$\ell$块的更新范数为$R_\ell>0$，深度从有限集合$\mathcal K$中选取，可依赖当前梯度和反馈批次。
+
+令$q_k$为式\eqref{eq:v2ns}作用于奇异值的$k$步标量映射，
+并定义
+\[
+ m=\min_{k\in\mathcal K,\ 0\le s\le1} q_k(s)/s,\qquad
+ M=\max_{k\in\mathcal K,\ 0\le s\le1} q_k(s)/s,\qquad
+ \alpha=m/M.
+\]
+$s=0$处采用连续延拓。因为$3.4445-4.7750 x+2.0315 x^2$的判别式为负且首项系数为正，
+$q_k(s)/s$是紧集上的正连续函数，故$0<\alpha\le1$。
+设$C=\alpha\min_\ell R_\ell$、$S=(\sum_\ell R_\ell^2)^{1/2}$，
+选择$0\le\lambda\le C/[2(\norm{w_0}+\eta ST)]$，并记$S'=S+C/2$。
+
+\begin{theorem}[幅度匹配有限NS的有限步界]\label{thm:v2convergence}
+按$w_{t+1}=(1-\eta\lambda)w_t-\eta D_t$更新，
+其中$D_t$由各块的幅度匹配NS方向组成。对$T\ge1$、$\eta>0$和$0\le\beta<1$，有
+\begin{align}
+ \frac1T\sum_{t=0}^{T-1}\mathbb E\norm{g_t}
+ &\le \frac{2(f(w_0)-f_*)}{C\eta T}
+     +\frac{L_f\eta (S')^2}{C} \nonumber\\
+ &\quad+\frac{2(1+\alpha)S}{C}\left[
+       \frac{\norm{g_0}}{T(1-\beta)}
+       +\frac{L_f\eta S'}{1-\beta}
+       +\sigma\sqrt{3(1-\beta)}\right].
+\end{align}
+取$\eta=c_1T^{-3/4}$和$1-\beta=c_2T^{-1/2}$，
+其中$c_1>0$、$0<c_2\le1$，平均期望梯度范数为$O(T^{-1/4})$。
+\end{theorem}
+
+该界将各深度共享的方向下界与动量跟踪误差结合。
+深度选择改变实际下降收益，同时保留同一个驻点收敛阶。证明见附录\ref{app:v2convergence}。

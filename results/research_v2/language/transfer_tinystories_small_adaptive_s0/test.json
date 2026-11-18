@@ -1,0 +1,17 @@
+{
+  "config_fingerprint": "01b02c24db992bfeb418800331c4e1746c97f72eb65fca4cd097622b051018a5",
+  "dataset_fingerprint": "4b7b281381ab1e694a11bc390736e4ccfdf9cd4f60eef7d90c096da1475d56f3",
+  "checkpoint_sha256": "6ea563cd31905154836c490982142f6a0e9379c875739f722e5cd9b97009afa4",
+  "best_step": 1000,
+  "best_validation": 2.3520913142710924,
+  "terminal_validation": 2.3520913142710924,
+  "targets": 2369481,
+  "precision": "bfloat16",
+  "split": "test",
+  "loss": 2.314824158241115,
+  "status": "COMPLETED",
+  "budget_provenance": {
+    "ledger_path": "runs/research_v2/gpu_budget.json",
+    "session_id": "c19c4e63f81844fb84cfb86f90426d2e"
+  }
+}

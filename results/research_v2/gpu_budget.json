@@ -1,0 +1,1315 @@
+{
+  "limit_seconds": 28800.0,
+  "used_seconds": 26898.923622337596,
+  "attempts": [
+    {
+      "label": "carried_course_v1",
+      "seconds": 3507.4571810862326,
+      "outcome": "CLOSED",
+      "reason": "Previously consumed aggregate budget",
+      "session_id": "course_v1_carried"
+    },
+    {
+      "label": "pilot_small_adamw",
+      "seconds": 23.220143600017764,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c4ab71f7edfe4cbea092d18a67ee65fe"
+    },
+    {
+      "label": "pilot_small_ns3",
+      "seconds": 26.34084190003341,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "198d0ecdbae54462ab4a5242cab06a63"
+    },
+    {
+      "label": "pilot_small_ns5",
+      "seconds": 25.113385700038634,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b10e6b771fc04da9bce26f3fe353f08f"
+    },
+    {
+      "label": "pilot_small_adaptive",
+      "seconds": 28.45640339999227,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8689468ef0d84d02887a3261b1a92e56"
+    },
+    {
+      "label": "pilot_medium_adamw",
+      "seconds": 36.41663100000005,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "89610304a5f349c29f18246b980d028e"
+    },
+    {
+      "label": "pilot_medium_ns3",
+      "seconds": 45.71336130000418,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "bbb7a41ae9c3473c86398c6b0f6a91d5"
+    },
+    {
+      "label": "pilot_medium_ns5",
+      "seconds": 45.02651290001813,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b5779ee0126943c79cba1d3ae3861ae7"
+    },
+    {
+      "label": "pilot_medium_adaptive",
+      "seconds": 39.77198779996252,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "227df9ee3efa4eef9b67831bff9f750e"
+    },
+    {
+      "label": "pilot_small_adamw",
+      "seconds": 0.027456900046672672,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "96ef0c9b75134b0eb59dd1a4abc1a764"
+    },
+    {
+      "label": "pilot_small_ns3",
+      "seconds": 0.027364399982616305,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "9a78d565ef1a4614a344fb64d063858f"
+    },
+    {
+      "label": "pilot_small_ns5",
+      "seconds": 0.024511899973731488,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8286a1c414a24a52865baf725cce765e"
+    },
+    {
+      "label": "pilot_small_adaptive",
+      "seconds": 0.026114300009794533,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a381bf5c13b04c6c9a13084f4f14c8dd"
+    },
+    {
+      "label": "pilot_small_ns1",
+      "seconds": 22.190428300003987,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4ca7fc3de9ea4274894f0a3fd51376ba"
+    },
+    {
+      "label": "pilot_small_momentum",
+      "seconds": 21.990556499978993,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c6fe852ab89e4f6593f757b4e9eb5fe3"
+    },
+    {
+      "label": "pilot_small_adam_rms",
+      "seconds": 23.514366700022947,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "13824cbf1fdd42199ca1c8fe27c735e1"
+    },
+    {
+      "label": "pilot_small_canonical5",
+      "seconds": 25.399446099996567,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "528148aaa07c42c7892aa77809f2b152"
+    },
+    {
+      "label": "pilot_medium_adamw",
+      "seconds": 0.07296449999557808,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f0ba53c0fc1d42958fd6ed5b43819f7c"
+    },
+    {
+      "label": "pilot_medium_ns3",
+      "seconds": 0.04497889999765903,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "35f1b01ffe8546469c60012727cac997"
+    },
+    {
+      "label": "pilot_medium_ns5",
+      "seconds": 0.04385570000158623,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f0bab1f509bc4c869f346a6d41877b07"
+    },
+    {
+      "label": "pilot_medium_adaptive",
+      "seconds": 0.04556980001507327,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "9c596842477846fbbb8a36bd18dff11f"
+    },
+    {
+      "label": "tune_wikitext103_small_adamw_lr0p0003_s101",
+      "seconds": 76.14440759998979,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ee96424a9972469bac3454123d70e339"
+    },
+    {
+      "label": "tune_wikitext103_small_adamw_lr0p001_s101",
+      "seconds": 79.40834110003198,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "817ba52f2662405d96ac211af6fb31fd"
+    },
+    {
+      "label": "tune_wikitext103_small_adamw_lr0p003_s101",
+      "seconds": 77.13455050002085,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0002aabec32044e4a834e1bb11d8fbf7"
+    },
+    {
+      "label": "tune_wikitext103_small_adamw_lr0p001_s102",
+      "seconds": 77.6285817999742,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "67b21ec74ff54ddeab1aaea8742b87c9"
+    },
+    {
+      "label": "tune_wikitext103_small_adamw_lr0p0003_s102",
+      "seconds": 74.14696519996505,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "42b7f4f79dc24c2db5e196805402a216"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p0003_s101",
+      "seconds": 76.67647770000622,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f2872bb216e14c099d2eac897d48f88c"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p001_s101",
+      "seconds": 80.25647170003504,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "30b443da7f444efcbe1b761938046932"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p003_s101",
+      "seconds": 78.88045189995319,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "526e0674a4ab4eb49dee325bf08bb7e9"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p0001_s101",
+      "seconds": 79.24006429995643,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "165838a491f046eb963d3cc1dc6e8070"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr3p33333e-05_s101",
+      "seconds": 76.44928900001105,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7703d80f62db42cab8b3292a058ab41b"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p0001_s102",
+      "seconds": 78.9633077000035,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "dffd0972fad2474aa16bc352d673d29a"
+    },
+    {
+      "label": "tune_wikitext103_small_momentum_lr0p0003_s102",
+      "seconds": 68.59523420000914,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e1e2028e8b7f4d849422c9b781aca4e2"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p0003_s101",
+      "seconds": 77.51757199998247,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "328478ff9a234fe382e09c8cd976fffd"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p001_s101",
+      "seconds": 82.7234829000081,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "2a22c9f5bfa341fba8a458e7e095b759"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p003_s101",
+      "seconds": 90.08395190001465,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "47d8cc59e4734038ae76ebc87cab017a"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p009_s101",
+      "seconds": 98.51655939995544,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5dca1f5043774b028f0aaf18774c304a"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p003_s102",
+      "seconds": 170.34922869998263,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5801a8b351534574b904abc33593ffa3"
+    },
+    {
+      "label": "tune_wikitext103_small_ns3_lr0p001_s102",
+      "seconds": 247.09119700000156,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a70c3bfe4abe4fd6872ba0950f58cd0b"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p0003_s101",
+      "seconds": 242.80904899997404,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f46e68577ce54660b268ae06e33e87d4"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p001_s101",
+      "seconds": 264.1731874999823,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "bb1a9028e43640c7ae9ec621d3cca1d6"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p003_s101",
+      "seconds": 299.7970973000047,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "94b70fa3dbdc413fa73019cd6c755c52"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p009_s101",
+      "seconds": 260.9671823999961,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6e41933899db4324b42a083c92e8efdd"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p003_s102",
+      "seconds": 233.44966520002345,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "738c886dc721489b9f3afe54b2dce964"
+    },
+    {
+      "label": "tune_wikitext103_small_ns5_lr0p009_s102",
+      "seconds": 96.83867790002842,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "460bd5e5c93e448b9594e38e0793655e"
+    },
+    {
+      "label": "tune_wikitext103_medium_adamw_lr0p0003_s101",
+      "seconds": 154.37974409997696,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e075fa6a5c104b62b536678ae01e4f41"
+    },
+    {
+      "label": "tune_wikitext103_medium_adamw_lr0p001_s101",
+      "seconds": 162.07004329998745,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5e6f495433d748e28e2963fa264e0c25"
+    },
+    {
+      "label": "tune_wikitext103_medium_adamw_lr0p003_s101",
+      "seconds": 162.1028613000526,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b2891c85bc6c44ca9b42d9e24dc135b6"
+    },
+    {
+      "label": "tune_wikitext103_medium_adamw_lr0p001_s102",
+      "seconds": 158.73581829998875,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1f712366fbe544d8a7e9837e20638f5a"
+    },
+    {
+      "label": "tune_wikitext103_medium_adamw_lr0p0003_s102",
+      "seconds": 135.71713519998593,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "eacfae7e681a4ee09863ad22a58f390c"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p0003_s101",
+      "seconds": 178.8449130000081,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1f188bfc9017497d96f2ed63fde81f68"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p001_s101",
+      "seconds": 199.17143950000172,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6ffd44e8f0744e9184dcf4ee013ad522"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p003_s101",
+      "seconds": 199.47737660002895,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b211ce0570074d1d9400bc47e7e30e26"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p009_s101",
+      "seconds": 200.79385509999702,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "986d9e8520e441b29596aca5dd7dd761"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p003_s102",
+      "seconds": 200.34027819999028,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e45115925e724e9bacc15e9c162ac7f0"
+    },
+    {
+      "label": "tune_wikitext103_medium_ns5_lr0p001_s102",
+      "seconds": 194.6107442000066,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "93925d04cab74a05886dd2c473e6bc27"
+    },
+    {
+      "label": "tune_tinystories_small_adamw_lr0p0003_s101",
+      "seconds": 107.44590049999533,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "fff87d45acbe451fade706f381e93aae"
+    },
+    {
+      "label": "tune_tinystories_small_adamw_lr0p001_s101",
+      "seconds": 75.60911530000158,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7fa94a681d664389b1c9b1e6493a76b8"
+    },
+    {
+      "label": "tune_tinystories_small_adamw_lr0p003_s101",
+      "seconds": 79.38780219998443,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "aa22cb75de3f49ef8cedec82cd2474d4"
+    },
+    {
+      "label": "tune_tinystories_small_adamw_lr0p001_s102",
+      "seconds": 79.08658210001886,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "67c14be368b64d739465ba2a58c59953"
+    },
+    {
+      "label": "tune_tinystories_small_adamw_lr0p0003_s102",
+      "seconds": 81.37661319994368,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "84f3ec744ce2458fa6cc18cd82a4c0cd"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p0003_s101",
+      "seconds": 92.37314530002186,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "cfb5ec75faaf4a8da00a0b54f8571fbc"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p001_s101",
+      "seconds": 92.17488649999723,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "70fe46f47c5c40a68ea74939805f0985"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p003_s101",
+      "seconds": 91.96113190002507,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "13a98a130ca248e3af4fca7a0d40cd2f"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p009_s101",
+      "seconds": 88.8516704000067,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e420bd2a59234121b95589b1d2168868"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p027_s101",
+      "seconds": 91.63736609998159,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "525403806f3846b289154b983869f0e3"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p009_s102",
+      "seconds": 88.28897550003603,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1c2563ce9cf74bf08feac10e5381d6e2"
+    },
+    {
+      "label": "tune_tinystories_small_ns5_lr0p003_s102",
+      "seconds": 92.43269320001127,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "adf4d97409214aff9fdd5adafb3800bb"
+    },
+    {
+      "label": "main_wikitext103_small_adamw_s0",
+      "seconds": 213.70546839999952,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "858a63aaec794bda995e6baf04203bc7"
+    },
+    {
+      "label": "main_wikitext103_small_momentum_s0",
+      "seconds": 210.89619909999965,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "09fd390a7c164b15989ca9326e8f8496"
+    },
+    {
+      "label": "main_wikitext103_small_ns1_s0",
+      "seconds": 226.4150718000019,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "765ad5ed610c49ddb91866aec1972fb7"
+    },
+    {
+      "label": "main_wikitext103_small_ns3_s0",
+      "seconds": 234.0499880999996,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "191b679fb84a44b2ba6505ca513898e5"
+    },
+    {
+      "label": "main_wikitext103_small_ns5_s0",
+      "seconds": 66.1036684513092,
+      "outcome": "RECOVERED_UNCLOSED_SESSION",
+      "reason": "Conservative wall-clock charge"
+    },
+    {
+      "label": "main_wikitext103_small_adamw_s0",
+      "seconds": 0.039656599998124875,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6b074aa7b9e645e2ab666d2bcae25e31"
+    },
+    {
+      "label": "main_wikitext103_small_momentum_s0",
+      "seconds": 0.03724010000223643,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6df7c4efdf3547fd846ddd6625c94ff0"
+    },
+    {
+      "label": "main_wikitext103_small_ns1_s0",
+      "seconds": 0.04271869999865885,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "fb2c8d64100c41d29bf0169912cc2e37"
+    },
+    {
+      "label": "main_wikitext103_small_ns3_s0",
+      "seconds": 0.04067599999689264,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "61e642f4974146c6ac7b5cd3644ed541"
+    },
+    {
+      "label": "main_wikitext103_small_ns5_s0",
+      "seconds": 243.9619246000002,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8a88d27c9c404273809dec86361bb402"
+    },
+    {
+      "label": "main_wikitext103_small_adaptive_s0",
+      "seconds": 259.48856559999695,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4754febf3ccb44e4997b9a40ab4add9d"
+    },
+    {
+      "label": "main_wikitext103_small_replay_s0",
+      "seconds": 259.6890425999991,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b73b0887a3fe432a8f1673f6dde592d0"
+    },
+    {
+      "label": "main_wikitext103_small_ns1_s1",
+      "seconds": 235.2811542999989,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e773188db69644e0a162ef9de9090065"
+    },
+    {
+      "label": "main_wikitext103_small_ns3_s1",
+      "seconds": 234.0684433000024,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "21e685a0ee1a45c18771a4ea6177616f"
+    },
+    {
+      "label": "main_wikitext103_small_ns5_s1",
+      "seconds": 229.10916350000116,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "dd1b7524d3c341a487d0db51fa8f06d9"
+    },
+    {
+      "label": "main_wikitext103_small_adaptive_s1",
+      "seconds": 245.44341310000164,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5238dd1d36f7408e93aba22a4895498c"
+    },
+    {
+      "label": "main_wikitext103_small_replay_s1",
+      "seconds": 243.9602234999984,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1c637ed02d99445aa4e352e2d9a80db0"
+    },
+    {
+      "label": "main_wikitext103_small_adamw_s1",
+      "seconds": 208.64154650000273,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a7c07ed8e6b747dca96d6b48430b3f73"
+    },
+    {
+      "label": "main_wikitext103_small_momentum_s1",
+      "seconds": 221.24851710000075,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "976f239e696f4663b3be7aee8d32d836"
+    },
+    {
+      "label": "main_wikitext103_small_ns5_s2",
+      "seconds": 239.19497609999962,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c7204c27291843c59e2b887e9c8bdf17"
+    },
+    {
+      "label": "main_wikitext103_small_adaptive_s2",
+      "seconds": 240.20548229999986,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "de1341e971ef47a796124a05cdd6bb68"
+    },
+    {
+      "label": "main_wikitext103_small_replay_s2",
+      "seconds": 238.467730999997,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0278ea533bd1482abbc2b4f688c2eafe"
+    },
+    {
+      "label": "main_wikitext103_small_adamw_s2",
+      "seconds": 198.0831115000001,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d72a7fc6856b43df8c3c4995bb6e306c"
+    },
+    {
+      "label": "main_wikitext103_small_momentum_s2",
+      "seconds": 224.15604650000023,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "f9362a3c493e4544bf10f9b4c9eb60fb"
+    },
+    {
+      "label": "main_wikitext103_small_ns1_s2",
+      "seconds": 234.26211070000136,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "764c57dd9ea94d91b73e3bce7a3339d6"
+    },
+    {
+      "label": "main_wikitext103_small_ns3_s2",
+      "seconds": 243.1707176000018,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a61acd89b41b428a802458642759e425"
+    },
+    {
+      "label": "criterion_wikitext103_small_spectral_s0",
+      "seconds": 260.8114779999996,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "aad6f093b234437683e712d5a2d92aaa"
+    },
+    {
+      "label": "criterion_wikitext103_small_spectral_s1",
+      "seconds": 230.18689809999705,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c300cbfb21fa4bf99f4d2cf983dc356e"
+    },
+    {
+      "label": "criterion_wikitext103_small_spectral_s2",
+      "seconds": 231.0632842999985,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "52ab04ce02424856868b62810ff407ef"
+    },
+    {
+      "label": "ablation_wikitext103_small_adam_rms_s0",
+      "seconds": 183.217994300001,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8e33b0022f70480f828e8d9b71ac8943"
+    },
+    {
+      "label": "ablation_wikitext103_small_canonical5_s0",
+      "seconds": 215.86489840000286,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ed58952c5fd643a7a34ae3ffc0a65cda"
+    },
+    {
+      "label": "ablation_wikitext103_small_adam_rms_s1",
+      "seconds": 191.07324599999993,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e9697385ba1944f7b13546f35dceb761"
+    },
+    {
+      "label": "ablation_wikitext103_small_canonical5_s1",
+      "seconds": 207.91975529999763,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "019d68751bdf468ca7aa921e343dd302"
+    },
+    {
+      "label": "ablation_wikitext103_small_adam_rms_s2",
+      "seconds": 187.63391430000047,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5c6f182e3b2542e7a19589e9ab16c63a"
+    },
+    {
+      "label": "ablation_wikitext103_small_canonical5_s2",
+      "seconds": 211.79033020000497,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a7b0c083b78748d9848654a5a674cbff"
+    },
+    {
+      "label": "scale_wikitext103_medium_adamw_s0",
+      "seconds": 281.5465220999977,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0d345ecd8d304dd0a878b72fb736c7b6"
+    },
+    {
+      "label": "scale_wikitext103_medium_ns5_s0",
+      "seconds": 346.252662400002,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3ab2c44382e04ad8bb345c73e757c11e"
+    },
+    {
+      "label": "scale_wikitext103_medium_adaptive_s0",
+      "seconds": 377.2854426999984,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "978ce8c338d648f69fcdb590362892d7"
+    },
+    {
+      "label": "scale_wikitext103_medium_adamw_s1",
+      "seconds": 318.5281227999949,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7991528aa0964a6aab92ce2e5b598422"
+    },
+    {
+      "label": "scale_wikitext103_medium_ns5_s1",
+      "seconds": 359.75332250000065,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "cfab40957bdc4d24b57b0d78e1838b47"
+    },
+    {
+      "label": "scale_wikitext103_medium_adaptive_s1",
+      "seconds": 376.77799660000164,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "95c599024e594bbf84f2aa6cbfc05635"
+    },
+    {
+      "label": "scale_wikitext103_medium_adamw_s2",
+      "seconds": 308.45165519999864,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ad442f8492d14b8bbcbcaba884a47b20"
+    },
+    {
+      "label": "scale_wikitext103_medium_ns5_s2",
+      "seconds": 359.927380000001,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8dc9b55a56b94b629bb1d01c7fa009b2"
+    },
+    {
+      "label": "scale_wikitext103_medium_adaptive_s2",
+      "seconds": 378.4914048999999,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d7c4a7c216184401a4c1ee5ef0847fb2"
+    },
+    {
+      "label": "transfer_tinystories_small_adamw_s0",
+      "seconds": 199.28613349999796,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a08921023943450697487af772e3c536"
+    },
+    {
+      "label": "transfer_tinystories_small_ns5_s0",
+      "seconds": 237.5998688999971,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0655ba1ec9d541cfb5a7cedc6c10bdd1"
+    },
+    {
+      "label": "transfer_tinystories_small_adaptive_s0",
+      "seconds": 227.42376879999938,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a3318e698bfe4cfa8328dd0b22915be0"
+    },
+    {
+      "label": "transfer_tinystories_small_adamw_s1",
+      "seconds": 199.73141249999753,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "13eefb8c5aa540f49adb988d6cfe4f6c"
+    },
+    {
+      "label": "transfer_tinystories_small_ns5_s1",
+      "seconds": 230.0496850000054,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1849d1d66c284a658173da080f92e849"
+    },
+    {
+      "label": "transfer_tinystories_small_adaptive_s1",
+      "seconds": 234.32557369999995,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5cc0c8e1d8024f8cb59293dd5c422b90"
+    },
+    {
+      "label": "transfer_tinystories_small_adamw_s2",
+      "seconds": 199.58516919999965,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ec68ea35cf584297a43bb5c7077d205b"
+    },
+    {
+      "label": "transfer_tinystories_small_ns5_s2",
+      "seconds": 228.52666999999929,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3085ef86199e48609c37d8b8c90345bd"
+    },
+    {
+      "label": "transfer_tinystories_small_adaptive_s2",
+      "seconds": 233.43367929999658,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0b0c0d25eb2f47d6bb0ea063de030b8e"
+    },
+    {
+      "label": "long_wikitext103_small_ns3_s0",
+      "seconds": 530.8473121999996,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "2a2acc27dfcf48c284b7ec4c42fb7a88"
+    },
+    {
+      "label": "long_wikitext103_small_ns5_s0",
+      "seconds": 526.9020247000008,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0e67244d45ef46ebb137bae242d9e973"
+    },
+    {
+      "label": "long_wikitext103_small_ns3_s1",
+      "seconds": 520.995307600002,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a174069b2a0740748093e09e5bc02b59"
+    },
+    {
+      "label": "long_wikitext103_small_ns5_s1",
+      "seconds": 524.2669274,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5acf229c3b6144b49fc1c10aa4cb7e1f"
+    },
+    {
+      "label": "long_wikitext103_small_ns3_s2",
+      "seconds": 511.95406289999664,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "997971daafd1404f98f5e5333c7f307c"
+    },
+    {
+      "label": "long_wikitext103_small_ns5_s2",
+      "seconds": 523.674729899998,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8011195e84534dbfb3894194923a5087"
+    },
+    {
+      "label": "test_main_wikitext103_small_adamw_s0",
+      "seconds": 2.6118971000032616,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3cab64ccdf1045939d371b6c85216400"
+    },
+    {
+      "label": "test_main_wikitext103_small_momentum_s0",
+      "seconds": 2.8107296000016504,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "8b441a54dff6408bb600b4f1397f6865"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns1_s0",
+      "seconds": 2.7992570999995223,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "47dd1116c931495bb0ccf497527b8be1"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns3_s0",
+      "seconds": 2.8823921000002883,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "504920cf8a3b400c942309190ecc01e6"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns5_s0",
+      "seconds": 2.5620452000002842,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a124334b24584811b5afd2d7e788d76d"
+    },
+    {
+      "label": "test_main_wikitext103_small_adaptive_s0",
+      "seconds": 2.850664899997355,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e4fa9c45109a40918225a81667ab46f4"
+    },
+    {
+      "label": "test_main_wikitext103_small_replay_s0",
+      "seconds": 2.8851849999991828,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "342c0b62d720427480fb6a217169f620"
+    },
+    {
+      "label": "test_main_wikitext103_small_adamw_s1",
+      "seconds": 2.5808555999974487,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "e328b7e213bf40a1a4f4d8adbdb82816"
+    },
+    {
+      "label": "test_main_wikitext103_small_momentum_s1",
+      "seconds": 2.6552172000010614,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "89eca94f8307420caf81374f810e3863"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns1_s1",
+      "seconds": 2.7722323999987566,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7fd9c36cb61b44dc96e877c4b9563349"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns3_s1",
+      "seconds": 2.8653063000019756,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c6d13f0c68184b279afafcde7e2eddde"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns5_s1",
+      "seconds": 2.8356314999982715,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4779154050614f7ba0d592a4e86802ea"
+    },
+    {
+      "label": "test_main_wikitext103_small_adaptive_s1",
+      "seconds": 2.646205799996096,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "21766cd4ba2e4cf9841b956803cfc857"
+    },
+    {
+      "label": "test_main_wikitext103_small_replay_s1",
+      "seconds": 2.6012669000047026,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "823551b295494f568c9579f991103a6c"
+    },
+    {
+      "label": "test_main_wikitext103_small_adamw_s2",
+      "seconds": 2.657974699999613,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1e69aaa5dcdb4997ab23b14f0d347870"
+    },
+    {
+      "label": "test_main_wikitext103_small_momentum_s2",
+      "seconds": 2.5988668000063626,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3ad8150d32ea490eb627731f7543e4db"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns1_s2",
+      "seconds": 2.745213000001968,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b2cc7a15b62340cbae6abdf5118fd87f"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns3_s2",
+      "seconds": 2.8055720000047586,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ee94b6e868d44ad799300fe1a38cb6d9"
+    },
+    {
+      "label": "test_main_wikitext103_small_ns5_s2",
+      "seconds": 2.6313139000048977,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "ea59f6e43b644599838607cf484d3294"
+    },
+    {
+      "label": "test_main_wikitext103_small_adaptive_s2",
+      "seconds": 2.843223700001545,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "21605f2f40df403b884c1e0bdfab3d6a"
+    },
+    {
+      "label": "test_main_wikitext103_small_replay_s2",
+      "seconds": 2.857102300004044,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "07cd377a130a47528a4ce243d8c94610"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_adam_rms_s0",
+      "seconds": 2.507711999998719,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a58127956bc54dab913ef676bb6bf821"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_canonical5_s0",
+      "seconds": 2.6269867999944836,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "3dbcb6da4de841d79479f3209da06669"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_adam_rms_s1",
+      "seconds": 2.8271603000030154,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "671858f5f3a94295be5d9e7942d08fef"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_canonical5_s1",
+      "seconds": 2.7941303999978118,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "9ada26f0f77941b5b9b5130f4ed507e3"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_adam_rms_s2",
+      "seconds": 2.69497969999793,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d41c0485f7dd4a379e05a953a0fccb15"
+    },
+    {
+      "label": "test_ablation_wikitext103_small_canonical5_s2",
+      "seconds": 2.821998999999778,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4b2d7b4874134010ab1a596a409a0b2e"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adamw_s0",
+      "seconds": 4.058957900000678,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a079dd864a794b318bd6f37fed58bb1c"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_ns5_s0",
+      "seconds": 4.139865800003463,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "069b8c4cbe4444ee86359a0a8bcf96ed"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adaptive_s0",
+      "seconds": 3.9728173000039533,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "7c6b2d1f404443ed884cd6fe0f59ec38"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adamw_s1",
+      "seconds": 4.1570817999963765,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d9abe669b22e48eda2f3ea51d8f2c08a"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_ns5_s1",
+      "seconds": 4.098393899999792,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c266550574f948ed96fb81eddee45a91"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adaptive_s1",
+      "seconds": 4.2981448999998975,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "98621dab8b5242af9eff44851549a874"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adamw_s2",
+      "seconds": 4.193272999997134,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "669f9dd636094ab0a3d86cad9876e84b"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_ns5_s2",
+      "seconds": 4.153247099995497,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d5d4b38669f6481c9ab0d178878d0710"
+    },
+    {
+      "label": "test_scale_wikitext103_medium_adaptive_s2",
+      "seconds": 4.0324256000021705,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "128bc8c8147f493588531817ff3b2876"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adamw_s0",
+      "seconds": 18.12436870000238,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c05d8f4bc25b4d299e37774dc0ca7684"
+    },
+    {
+      "label": "test_transfer_tinystories_small_ns5_s0",
+      "seconds": 18.20202530000097,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b4db94c1ee2a48db8b17e4564d72721a"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adaptive_s0",
+      "seconds": 16.203830799997377,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c19c4e63f81844fb84cfb86f90426d2e"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adamw_s1",
+      "seconds": 19.056711500001256,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "5992de002cb64a2499522cad2a395670"
+    },
+    {
+      "label": "test_transfer_tinystories_small_ns5_s1",
+      "seconds": 19.698195199998736,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a4e44cf32587499885ef142d0421aa79"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adaptive_s1",
+      "seconds": 19.477411899999424,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d8bb1b0e225547a9baa6e909a48e63c3"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adamw_s2",
+      "seconds": 23.870065799994336,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "03dcab0cce864c388930ceab325ae9b3"
+    },
+    {
+      "label": "test_transfer_tinystories_small_ns5_s2",
+      "seconds": 43.34661369999958,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "1e037ee18bd04ad9a49aae2a7c730ce3"
+    },
+    {
+      "label": "test_transfer_tinystories_small_adaptive_s2",
+      "seconds": 26.328607600000396,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "6f0c4231985f45a9b9a6f8158511a776"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns3_s0",
+      "seconds": 4.123152700005448,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "48967a04f61941f0a963c1eaa94ffcc1"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns5_s0",
+      "seconds": 3.6954984000039985,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "c8a7e9dbb3754b9c86e903a7a3de010a"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns3_s1",
+      "seconds": 3.7828819999995176,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "fa8cbab9f61147778e58218a69304fd4"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns5_s1",
+      "seconds": 3.800855200002843,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "a915bc46d32148498a678441ed34e075"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns3_s2",
+      "seconds": 3.6576981999969576,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "381422c69b72454080f51d105a54799f"
+    },
+    {
+      "label": "test_long_wikitext103_small_ns5_s2",
+      "seconds": 3.654326600000786,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "39b825deb1f1432b9d070fcf7a17978a"
+    },
+    {
+      "label": "test_criterion_wikitext103_small_spectral_s0",
+      "seconds": 3.5260086999987834,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "db8251c7c9df488ebb187b0be7b88bb9"
+    },
+    {
+      "label": "test_criterion_wikitext103_small_spectral_s1",
+      "seconds": 3.5351407999987714,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "0c44d74ca6c94e22b594d9630abc3bc4"
+    },
+    {
+      "label": "test_criterion_wikitext103_small_spectral_s2",
+      "seconds": 3.794863900002383,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "4b6ee6edddaf4773ab3a620fcc59080a"
+    },
+    {
+      "label": "profile_small",
+      "seconds": 70.91512180000427,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "65bbf9b250244493be1e0dd680a08769"
+    },
+    {
+      "label": "profile_medium",
+      "seconds": 222.51947369999834,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b02446eb0e9d425d843b44c402094a7a"
+    },
+    {
+      "label": "late_replay_wikitext103_small_s1",
+      "seconds": 876.864333999998,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "12134b8fc6b849fa927fc65d678fffd1"
+    },
+    {
+      "label": "test_late_replay_wikitext103_small_s1",
+      "seconds": 6.557210099999793,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "b4748156bcdd4f318ff613399c289869"
+    },
+    {
+      "label": "late_replay_wikitext103_small_s2",
+      "seconds": 300.0747440999985,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "d5ce1a313b9940829b09817225c89442"
+    },
+    {
+      "label": "test_late_replay_wikitext103_small_s2",
+      "seconds": 2.6625147000013385,
+      "outcome": "CLOSED",
+      "reason": null,
+      "session_id": "070a17be4faf4a3c80ad2de6e0ed2a27"
+    }
+  ],
+  "active": null
+}

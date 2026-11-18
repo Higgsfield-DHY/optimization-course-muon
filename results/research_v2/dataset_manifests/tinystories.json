@@ -1,0 +1,61 @@
+{
+  "schema": 1,
+  "dtype": "uint16",
+  "corpus": "tinystories",
+  "tokenizer": "tiktoken-0.9.0/gpt2",
+  "tokenizer_ranks_sha256": "74f74f2f2db38f35dcfa003aec9f6b7d7120b41a714fb394976a422c9e9074f1",
+  "vocabulary": 50304,
+  "actual_vocabulary": 50257,
+  "eot_token": 50256,
+  "sources": [
+    {
+      "name": "stories_train",
+      "path": "data\\research_v2\\raw\\stories_train.parquet",
+      "repository": "roneneldan/TinyStories",
+      "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+      "file": "data/train-00000-of-00004-2d5a1467fff1081b.parquet",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories/resolve/f54c09fd23315a6f9c86f9dc80f725de7d8f9c64/data/train-00000-of-00004-2d5a1467fff1081b.parquet",
+      "size": 248731111,
+      "sha256": "77cf780cebe52b6e83e3a2ac84bc56d8059363113e41d17a023f1d8b2ed0fc0b"
+    },
+    {
+      "name": "stories_val",
+      "path": "data\\research_v2\\raw\\stories_val.parquet",
+      "repository": "roneneldan/TinyStories",
+      "revision": "f54c09fd23315a6f9c86f9dc80f725de7d8f9c64",
+      "file": "data/validation-00000-of-00001-869c898b519ad725.parquet",
+      "url": "https://huggingface.co/datasets/roneneldan/TinyStories/resolve/f54c09fd23315a6f9c86f9dc80f725de7d8f9c64/data/validation-00000-of-00001-869c898b519ad725.parquet",
+      "size": 9989127,
+      "sha256": "33406a6206554cfc279c29c11f4df51528af487aa1a602b075566fc83c49dcab"
+    }
+  ],
+  "document_rule": "official validation content SHA256 first-byte parity",
+  "document_metadata": {
+    "train": {
+      "documents": 222433,
+      "document_sequence_sha256": "5bfa2de648e5d89fcd052eacd2c98a90d3913cd99c4bdd02cd0b50e9fcc3da2a"
+    },
+    "val": {
+      "documents": 11028,
+      "document_sequence_sha256": "ac2923bcfee09439bc498e635de36678c8743f2205051881b0dc4a3eadb8a8f0"
+    },
+    "test": {
+      "documents": 10962,
+      "document_sequence_sha256": "7b334cbe1dce7bc0fe5ee65e8dd389faf646b8e6d461a1bdcff681f96d64e134"
+    }
+  },
+  "splits": {
+    "train": {
+      "tokens": 50000000,
+      "sha256": "6c121064febcaa63a43a115363ea70e79757fd028e96ebbcb8e222eae5415c68"
+    },
+    "val": {
+      "tokens": 2396436,
+      "sha256": "d6d2748b8707d2966ac2c37efc67d37058c9027214f92617077a9f643401b8ca"
+    },
+    "test": {
+      "tokens": 2369482,
+      "sha256": "3a8d83eebb0c0410087026e579f67fa7b58953c28793d65bc513dc6abbadf959"
+    }
+  }
+}

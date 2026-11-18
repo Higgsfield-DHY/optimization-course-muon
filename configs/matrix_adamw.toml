@@ -1,0 +1,17 @@
+[run]
+name = "matrix_adamw"
+task = "matrix"
+seed = 0
+device = "cpu"
+
+[optimizer]
+name = "adamw"
+lr = 0.01
+weight_decay = 0.0
+
+[matrix]
+rows = 32
+cols = 16
+condition_number = 100.0
+noise_std = 0.0
+steps = 1000

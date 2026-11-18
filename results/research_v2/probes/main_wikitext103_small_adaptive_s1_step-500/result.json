@@ -1,0 +1,1752 @@
+{
+  "status": "COMPLETED",
+  "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e",
+  "dataset_fingerprint": "3a91ef4f77c98e13cdeb1f247f09810a2dc656be9e6e077199acd9b5268a7b49",
+  "run_id": "main_wikitext103_small_adaptive_s1",
+  "anchor_step": 500,
+  "device": "cpu",
+  "precision": "float32",
+  "instrument": {
+    "schema": 3,
+    "repeats": 2,
+    "b_sequences": 4,
+    "c_sequences": 16,
+    "threads": 2,
+    "multipliers": [
+      0.5,
+      1.0,
+      2.0
+    ],
+    "source_hashes": {
+      "probes.py": "43d43bb6a15b3730b24c87b179ead3c7171c1e51d80a46cd47c801fd9ef59456",
+      "instruments.py": "6126cc8c391f1fda8c7c2d02327ab5a502fbe0c64548557e7e04d0f86b0e35f5",
+      "geometry.py": "37e820b312a3aa6548441140a0b4ff6e08a4f652e4f0a7cff21779b59ee8f89e",
+      "data.py": "3caa5806b8fbfbead71dc53972b9b12b37704695f8141a691a965dc68a77b06c",
+      "language.py": "31fd2af513f9464e7a25968137c93b474e5f5d3e230baff8eb8df7e8f4b29ed2",
+      "../model.py": "350052b18145372763b11b3cb7dc67cf7535d4de1a64ae579657cc0db6a37f4d"
+    }
+  },
+  "spectral": [
+    {
+      "layer": "blocks.2.mlp.0.weight",
+      "shape": [
+        1536,
+        384
+      ],
+      "stable_rank": 5.146507562444441,
+      "entropy_rank": 52.3412818726683,
+      "normalized_quantiles": [
+        0.0041895572048003624,
+        0.005623411925728868,
+        0.014325637053019806,
+        0.0701419162597185,
+        0.17820166275753926
+      ]
+    },
+    {
+      "layer": "blocks.0.attention.qkv.weight",
+      "shape": [
+        1152,
+        384
+      ],
+      "stable_rank": 3.6503676407544665,
+      "entropy_rank": 47.877066635492255,
+      "normalized_quantiles": [
+        0.006506494128419512,
+        0.008784624897791752,
+        0.020189271724438337,
+        0.06252963392832445,
+        0.17458168747260008
+      ]
+    },
+    {
+      "layer": "blocks.3.attention.projection.weight",
+      "shape": [
+        384,
+        384
+      ],
+      "stable_rank": 5.123240331106874,
+      "entropy_rank": 31.182530914895985,
+      "normalized_quantiles": [
+        7.147816020102863e-05,
+        0.0010112442305347535,
+        0.008066355063531032,
+        0.06087295138064709,
+        0.19131059415471802
+      ]
+    },
+    {
+      "layer": "blocks.3.mlp.2.weight",
+      "shape": [
+        384,
+        1536
+      ],
+      "stable_rank": 3.5078494489885013,
+      "entropy_rank": 32.37760664752478,
+      "normalized_quantiles": [
+        0.0053760440962484154,
+        0.00693566388530318,
+        0.014930395868568792,
+        0.05858038493722718,
+        0.17502031094695164
+      ]
+    }
+  ],
+  "registered_anchor": {
+    "step": 500,
+    "config_fingerprint": "842f0f37cd6e773aa3997e7bfdf2d51456a903452901d1f74c197b2fadd1937a"
+  },
+  "rows": [
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns1",
+      "multiplier": 0.5,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.025352008640766144,
+      "curvature": 0.059323204075099056,
+      "predicted_gain": -0.004309593396783384,
+      "actual_gain": -0.01849842071533203,
+      "actual_b_unit_gain": -0.07354879379272461,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.23729281630039623,
+        "ns3": 0.0619205240127485,
+        "ns5": 0.042874814816968865,
+        "polar": 0.045261669516548864,
+        "cubic5": 0.15189993919011613
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.013215668499469757,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.035323623567819595
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0007241302519105375,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004911280237138271
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0014868371654301882,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.005446669179946184
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00032574517535977066,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0024222894571721554
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns3",
+      "multiplier": 0.5,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.007247988600283861,
+      "curvature": 0.0045498436466715475,
+      "predicted_gain": 0.004973066776948087,
+      "actual_gain": 0.0010266304016113281,
+      "actual_b_unit_gain": 0.005175590515136719,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.061920508953619446,
+        "ns3": 0.01819937458668619,
+        "ns5": 0.012730061608010601,
+        "polar": 0.013292604060836766,
+        "cubic5": 0.04177141958672337
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029076552018523216,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0018687202828004956
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0003157295868732035,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.0005023307749070227
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -1.864569276222028e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.00038921128725633025
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00011631488450802863,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019856932340189815
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns5",
+      "multiplier": 0.5,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.004978507291525602,
+      "curvature": 0.002245652834389489,
+      "predicted_gain": 0.003855680874330858,
+      "actual_gain": 0.0012979507446289062,
+      "actual_b_unit_gain": 0.005387306213378906,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.042874802279982305,
+        "ns3": 0.012730060885076,
+        "ns5": 0.008982611337557955,
+        "polar": 0.009380112734504564,
+        "cubic5": 0.029045214321229196
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0026118529494851828,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0011530513875186443
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00024024900631047785,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.0002815569459926337
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -8.461439392704051e-06,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00022218679077923298
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 8.033369522308931e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.522667096462101e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "polar",
+      "multiplier": 0.5,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.005093290936201811,
+      "curvature": 0.002461740260486067,
+      "predicted_gain": 0.0038624208059587772,
+      "actual_gain": 0.0013880729675292969,
+      "actual_b_unit_gain": 0.005182743072509766,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.04526165681079419,
+        "ns3": 0.013292604915363881,
+        "ns5": 0.009380113664406053,
+        "polar": 0.009846961041944269,
+        "cubic5": 0.03056622817882726
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029229449573904276,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.0014043798437342048
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00022846060164738446,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002872213954105973
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -7.157841173466295e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002243723429273814
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 6.450813089031726e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.521685958839953e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "cubic5",
+      "multiplier": 0.5,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.016880681738257408,
+      "curvature": 0.02505776409893201,
+      "predicted_gain": 0.004351799688791402,
+      "actual_gain": -0.005467414855957031,
+      "actual_b_unit_gain": -0.018186092376708984,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.15189991431850558,
+        "ns3": 0.04177142342393836,
+        "ns5": 0.02904521877951538,
+        "polar": 0.03056622992460234,
+        "cubic5": 0.10023105639572805
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.008854220621287823,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.01416709367185831
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00051306834211573,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0023848016280680895
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0005142688751220703,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.002243340015411377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.0001951219601323828,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.0009387744357809424
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns1",
+      "multiplier": 1.0,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.05070401728153229,
+      "curvature": 0.23729281630039623,
+      "predicted_gain": -0.06794239086866583,
+      "actual_gain": -0.09375953674316406,
+      "actual_b_unit_gain": -0.07354879379272461,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.23729281630039623,
+        "ns3": 0.0619205240127485,
+        "ns5": 0.042874814816968865,
+        "polar": 0.045261669516548864,
+        "cubic5": 0.15189993919011613
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.013215668499469757,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.035323623567819595
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0007241302519105375,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004911280237138271
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0014868371654301882,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.005446669179946184
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00032574517535977066,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0024222894571721554
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns3",
+      "multiplier": 1.0,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.014495977200567722,
+      "curvature": 0.01819937458668619,
+      "predicted_gain": 0.005396289907224627,
+      "actual_gain": -0.0019392967224121094,
+      "actual_b_unit_gain": 0.005175590515136719,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.061920508953619446,
+        "ns3": 0.01819937458668619,
+        "ns5": 0.012730061608010601,
+        "polar": 0.013292604060836766,
+        "cubic5": 0.04177141958672337
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029076552018523216,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0018687202828004956
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0003157295868732035,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.0005023307749070227
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -1.864569276222028e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.00038921128725633025
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00011631488450802863,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019856932340189815
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns5",
+      "multiplier": 1.0,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.009957014583051205,
+      "curvature": 0.008982611337557955,
+      "predicted_gain": 0.005465708914272227,
+      "actual_gain": 0.0006046295166015625,
+      "actual_b_unit_gain": 0.005387306213378906,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.042874802279982305,
+        "ns3": 0.012730060885076,
+        "ns5": 0.008982611337557955,
+        "polar": 0.009380112734504564,
+        "cubic5": 0.029045214321229196
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0026118529494851828,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0011530513875186443
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00024024900631047785,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.0002815569459926337
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -8.461439392704051e-06,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00022218679077923298
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 8.033369522308931e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.522667096462101e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "polar",
+      "multiplier": 1.0,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.010186581872403622,
+      "curvature": 0.009846961041944269,
+      "predicted_gain": 0.005263101351431487,
+      "actual_gain": 0.0005655288696289062,
+      "actual_b_unit_gain": 0.005182743072509766,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.04526165681079419,
+        "ns3": 0.013292604915363881,
+        "ns5": 0.009380113664406053,
+        "polar": 0.009846961041944269,
+        "cubic5": 0.03056622817882726
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029229449573904276,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.0014043798437342048
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00022846060164738446,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002872213954105973
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -7.157841173466295e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002243723429273814
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 6.450813089031726e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.521685958839953e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "cubic5",
+      "multiplier": 1.0,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.033761363476514816,
+      "curvature": 0.10023105639572805,
+      "predicted_gain": -0.016354164721349207,
+      "actual_gain": -0.03442811965942383,
+      "actual_b_unit_gain": -0.018186092376708984,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.15189991431850558,
+        "ns3": 0.04177142342393836,
+        "ns5": 0.02904521877951538,
+        "polar": 0.03056622992460234,
+        "cubic5": 0.10023105639572805
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.008854220621287823,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.01416709367185831
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00051306834211573,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0023848016280680895
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0005142688751220703,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.002243340015411377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.0001951219601323828,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.0009387744357809424
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns1",
+      "multiplier": 2.0,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.10140803456306458,
+      "curvature": 0.9491712652015849,
+      "predicted_gain": -0.3731775980377279,
+      "actual_gain": -0.3976268768310547,
+      "actual_b_unit_gain": -0.07354879379272461,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.23729281630039623,
+        "ns3": 0.0619205240127485,
+        "ns5": 0.042874814816968865,
+        "polar": 0.045261669516548864,
+        "cubic5": 0.15189993919011613
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.013215668499469757,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.035323623567819595
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0007241302519105375,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004911280237138271
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0014868371654301882,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.005446669179946184
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00032574517535977066,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0024222894571721554
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns3",
+      "multiplier": 2.0,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.028991954401135445,
+      "curvature": 0.07279749834674476,
+      "predicted_gain": -0.007406794772236935,
+      "actual_gain": -0.020116806030273438,
+      "actual_b_unit_gain": 0.005175590515136719,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.061920508953619446,
+        "ns3": 0.01819937458668619,
+        "ns5": 0.012730061608010601,
+        "polar": 0.013292604060836766,
+        "cubic5": 0.04177141958672337
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029076552018523216,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0018687202828004956
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.0003157295868732035,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.0005023307749070227
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -1.864569276222028e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.00038921128725633025
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.00011631488450802863,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019856932340189815
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "ns5",
+      "multiplier": 2.0,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.01991402916610241,
+      "curvature": 0.03593044535023182,
+      "predicted_gain": 0.0019488064909864988,
+      "actual_gain": -0.006865501403808594,
+      "actual_b_unit_gain": 0.005387306213378906,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.042874802279982305,
+        "ns3": 0.012730060885076,
+        "ns5": 0.008982611337557955,
+        "polar": 0.009380112734504564,
+        "cubic5": 0.029045214321229196
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0026118529494851828,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0011530513875186443
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00024024900631047785,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.0002815569459926337
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -8.461439392704051e-06,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00022218679077923298
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 8.033369522308931e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.522667096462101e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "polar",
+      "multiplier": 2.0,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.020373163744807243,
+      "curvature": 0.039387844167777075,
+      "predicted_gain": 0.0006792416609187057,
+      "actual_gain": -0.007836341857910156,
+      "actual_b_unit_gain": 0.005182743072509766,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.04526165681079419,
+        "ns3": 0.013292604915363881,
+        "ns5": 0.009380113664406053,
+        "polar": 0.009846961041944269,
+        "cubic5": 0.03056622817882726
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0029229449573904276,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.0014043798437342048
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00022846060164738446,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002872213954105973
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -7.157841173466295e-05,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002243723429273814
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 6.450813089031726e-05,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.521685958839953e-05
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 0,
+      "variant": "cubic5",
+      "multiplier": 2.0,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.06752272695302963,
+      "curvature": 0.4009242255829122,
+      "predicted_gain": -0.13293938583842646,
+      "actual_gain": -0.16347694396972656,
+      "actual_b_unit_gain": -0.018186092376708984,
+      "c_base_loss": 5.343134880065918,
+      "cross_curvature": {
+        "ns1": 0.15189991431850558,
+        "ns3": 0.04177142342393836,
+        "ns5": 0.02904521877951538,
+        "polar": 0.03056622992460234,
+        "cubic5": 0.10023105639572805
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.008854220621287823,
+          "gradient_norm": 0.5941749215126038,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.01416709367185831
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 0.00051306834211573,
+          "gradient_norm": 0.1365886628627777,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0023848016280680895
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.0005142688751220703,
+          "gradient_norm": 0.14389421045780182,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.002243340015411377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 0.0001951219601323828,
+          "gradient_norm": 0.09561232477426529,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.0009387744357809424
+        }
+      },
+      "b_batch_sha256": "b8261fc7ba0190b21543aa8930e97569514844650c831986e63f4708b00f4155",
+      "c_batch_sha256": "f3725ca8e12e31f68b5de0a9e3e828421b76e779b376ca5fe64ccc93cfea246d",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns1",
+      "multiplier": 0.5,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.009901036508381367,
+      "curvature": 0.05511316117191711,
+      "predicted_gain": -0.01765554407757719,
+      "actual_gain": -0.026708602905273438,
+      "actual_b_unit_gain": -0.09558534622192383,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.22045264468766845,
+        "ns3": 0.05593856167985223,
+        "ns5": 0.03930216265149511,
+        "polar": 0.041559473611471276,
+        "cubic5": 0.1415336758946637
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.004072263836860657,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.03155894950032234
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -0.00021610490512102842,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004260530229657888
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.00045277641038410366,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.0060585299506783485
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 7.941437070257962e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0025223898701369762
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns3",
+      "multiplier": 0.5,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.0042459480464458466,
+      "curvature": 0.003989878653243295,
+      "predicted_gain": 0.002251008719824199,
+      "actual_gain": -0.0008974075317382812,
+      "actual_b_unit_gain": 0.0003590583801269531,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.05593856609141312,
+        "ns3": 0.01595951461297318,
+        "ns5": 0.011300654720457715,
+        "polar": 0.011800526760112007,
+        "cubic5": 0.037771087360511046
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0011282259365543723,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0016442749183624983
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -2.9062051908113062e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.00042552739614620805
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00028723542345687747,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.0004374232958070934
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 3.2954012567643076e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019317484111525118
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns5",
+      "multiplier": 0.5,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.003417552914470434,
+      "curvature": 0.0020196603850237693,
+      "predicted_gain": 0.0024077227219585495,
+      "actual_gain": 0.00016498565673828125,
+      "actual_b_unit_gain": 0.0027441978454589844,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.03930216504338091,
+        "ns3": 0.011300654461564363,
+        "ns5": 0.008078641540095077,
+        "polar": 0.008440984665838869,
+        "cubic5": 0.02662316655002428
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.001043704804033041,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0010418941965326667
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -6.657428457401693e-07,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.00024179542378988117
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00024099659640341997,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00025694063515402377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.8352271328913048e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.62463382165879e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "polar",
+      "multiplier": 0.5,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.003552144393324852,
+      "curvature": 0.0022171480605521765,
+      "predicted_gain": 0.0024435703630487637,
+      "actual_gain": 6.961822509765625e-05,
+      "actual_b_unit_gain": 0.0026154518127441406,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.04155947325153875,
+        "ns3": 0.011800525612045476,
+        "ns5": 0.008440984271430807,
+        "polar": 0.008868592242208706,
+        "cubic5": 0.02807792793129238
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0010792528046295047,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.001253780210390687
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 1.9544577298802324e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002505503944121301
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00017736740119289607,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002684296923689544
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.753188346105162e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.590183279011399e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "cubic5",
+      "multiplier": 0.5,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.00818551518023014,
+      "curvature": 0.023412002214023175,
+      "predicted_gain": -0.003520485926781447,
+      "actual_gain": -0.01093292236328125,
+      "actual_b_unit_gain": -0.03211784362792969,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.14153363960153342,
+        "ns3": 0.037771076690972905,
+        "ns5": 0.02662316022846767,
+        "polar": 0.028077922906362573,
+        "cubic5": 0.0936480088560927
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.002936700591817498,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.012632160447537899
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -4.1972896724473685e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0021400542464107275
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 5.789343413198367e-05,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.0025225908029824495
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.3332962882705033e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.000990930711850524
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns1",
+      "multiplier": 1.0,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.019802073016762733,
+      "curvature": 0.22045264468766845,
+      "predicted_gain": -0.0904242493270715,
+      "actual_gain": -0.1093602180480957,
+      "actual_b_unit_gain": -0.09558534622192383,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.22045264468766845,
+        "ns3": 0.05593856167985223,
+        "ns5": 0.03930216265149511,
+        "polar": 0.041559473611471276,
+        "cubic5": 0.1415336758946637
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.004072263836860657,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.03155894950032234
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -0.00021610490512102842,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004260530229657888
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.00045277641038410366,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.0060585299506783485
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 7.941437070257962e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0025223898701369762
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns3",
+      "multiplier": 1.0,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.008491896092891693,
+      "curvature": 0.01595951461297318,
+      "predicted_gain": 0.000512138786405103,
+      "actual_gain": -0.005811214447021484,
+      "actual_b_unit_gain": 0.0003590583801269531,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.05593856609141312,
+        "ns3": 0.01595951461297318,
+        "ns5": 0.011300654720457715,
+        "polar": 0.011800526760112007,
+        "cubic5": 0.037771087360511046
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0011282259365543723,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0016442749183624983
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -2.9062051908113062e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.00042552739614620805
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00028723542345687747,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.0004374232958070934
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 3.2954012567643076e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019317484111525118
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns5",
+      "multiplier": 1.0,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.006835105828940868,
+      "curvature": 0.008078641540095077,
+      "predicted_gain": 0.0027957850588933297,
+      "actual_gain": -0.0016703605651855469,
+      "actual_b_unit_gain": 0.0027441978454589844,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.03930216504338091,
+        "ns3": 0.011300654461564363,
+        "ns5": 0.008078641540095077,
+        "polar": 0.008440984665838869,
+        "cubic5": 0.02662316655002428
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.001043704804033041,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0010418941965326667
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -6.657428457401693e-07,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.00024179542378988117
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00024099659640341997,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00025694063515402377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.8352271328913048e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.62463382165879e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "polar",
+      "multiplier": 1.0,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.007104288786649704,
+      "curvature": 0.008868592242208706,
+      "predicted_gain": 0.002669992665545351,
+      "actual_gain": -0.0020804405212402344,
+      "actual_b_unit_gain": 0.0026154518127441406,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.04155947325153875,
+        "ns3": 0.011800525612045476,
+        "ns5": 0.008440984271430807,
+        "polar": 0.008868592242208706,
+        "cubic5": 0.02807792793129238
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0010792528046295047,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.001253780210390687
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 1.9544577298802324e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002505503944121301
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00017736740119289607,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002684296923689544
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.753188346105162e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.590183279011399e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "cubic5",
+      "multiplier": 1.0,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.01637103036046028,
+      "curvature": 0.0936480088560927,
+      "predicted_gain": -0.03045297406758607,
+      "actual_gain": -0.0455937385559082,
+      "actual_b_unit_gain": -0.03211784362792969,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.14153363960153342,
+        "ns3": 0.037771076690972905,
+        "ns5": 0.02662316022846767,
+        "polar": 0.028077922906362573,
+        "cubic5": 0.0936480088560927
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.002936700591817498,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.012632160447537899
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -4.1972896724473685e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0021400542464107275
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 5.789343413198367e-05,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.0025225908029824495
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.3332962882705033e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.000990930711850524
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns1",
+      "multiplier": 2.0,
+      "polar_error": 0.9193944218991933,
+      "linear_gain": 0.03960414603352547,
+      "curvature": 0.8818105787506738,
+      "predicted_gain": -0.40130114334181144,
+      "actual_gain": -0.41565895080566406,
+      "actual_b_unit_gain": -0.09558534622192383,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.22045264468766845,
+        "ns3": 0.05593856167985223,
+        "ns5": 0.03930216265149511,
+        "polar": 0.041559473611471276,
+        "cubic5": 0.1415336758946637
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.004072263836860657,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.00037681273533962667,
+          "curvature_contribution": 0.03155894950032234
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -0.00021610490512102842,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037628444260917604,
+          "curvature_contribution": 0.004260530229657888
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": -0.00045277641038410366,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037618965143337846,
+          "curvature_contribution": 0.0060585299506783485
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 7.941437070257962e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.000376510142814368,
+          "curvature_contribution": 0.0025223898701369762
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns3",
+      "multiplier": 2.0,
+      "polar_error": 0.5311912874438272,
+      "linear_gain": 0.016983792185783386,
+      "curvature": 0.06383805845189272,
+      "predicted_gain": -0.014935237040162974,
+      "actual_gain": -0.027855873107910156,
+      "actual_b_unit_gain": 0.0003590583801269531,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.05593856609141312,
+        "ns3": 0.01595951461297318,
+        "ns5": 0.011300654720457715,
+        "polar": 0.011800526760112007,
+        "cubic5": 0.037771087360511046
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0011282259365543723,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767558082472533,
+          "curvature_contribution": 0.0016442749183624983
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -2.9062051908113062e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760038234759122,
+          "curvature_contribution": 0.00042552739614620805
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00028723542345687747,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.0003757311205845326,
+          "curvature_contribution": 0.0004374232958070934
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 3.2954012567643076e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003763661370612681,
+          "curvature_contribution": 0.00019317484111525118
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "ns5",
+      "multiplier": 2.0,
+      "polar_error": 0.20346461033626975,
+      "linear_gain": 0.013670211657881737,
+      "curvature": 0.03231456616038031,
+      "predicted_gain": -0.002487071422308418,
+      "actual_gain": -0.011408329010009766,
+      "actual_b_unit_gain": 0.0027441978454589844,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.03930216504338091,
+        "ns3": 0.011300654461564363,
+        "ns5": 0.008078641540095077,
+        "polar": 0.008440984665838869,
+        "cubic5": 0.02662316655002428
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.001043704804033041,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767356392927468,
+          "curvature_contribution": 0.0010418941965326667
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -6.657428457401693e-07,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037602681550197303,
+          "curvature_contribution": 0.00024179542378988117
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00024099659640341997,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576077738776803,
+          "curvature_contribution": 0.00025694063515402377
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.8352271328913048e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037636642809957266,
+          "curvature_contribution": 9.62463382165879e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "polar",
+      "multiplier": 2.0,
+      "polar_error": 4.497449525977294e-08,
+      "linear_gain": 0.014208577573299408,
+      "curvature": 0.035474368968834824,
+      "predicted_gain": -0.003528606911118004,
+      "actual_gain": -0.013104915618896484,
+      "actual_b_unit_gain": 0.0026154518127441406,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.04155947325153875,
+        "ns3": 0.011800525612045476,
+        "ns5": 0.008440984271430807,
+        "polar": 0.008868592242208706,
+        "cubic5": 0.02807792793129238
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.0010792528046295047,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003767317393794656,
+          "curvature_contribution": 0.001253780210390687
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": 1.9544577298802324e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.0003760201798286289,
+          "curvature_contribution": 0.0002505503944121301
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 0.00017736740119289607,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037576802424155176,
+          "curvature_contribution": 0.0002684296923689544
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.753188346105162e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.00037638682988472283,
+          "curvature_contribution": 8.590183279011399e-05
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    },
+    {
+      "run_id": "main_wikitext103_small_adaptive_s1",
+      "seed": 1,
+      "cohort": "main",
+      "corpus": "wikitext103",
+      "scale": "small",
+      "anchor_step": 500,
+      "base_completed_updates": 499,
+      "repeat": 1,
+      "variant": "cubic5",
+      "multiplier": 2.0,
+      "polar_error": 0.8161621055855744,
+      "linear_gain": 0.03274206072092056,
+      "curvature": 0.3745920354243708,
+      "predicted_gain": -0.15455395699126484,
+      "actual_gain": -0.18329715728759766,
+      "actual_b_unit_gain": -0.03211784362792969,
+      "c_base_loss": 5.325479507446289,
+      "cross_curvature": {
+        "ns1": 0.14153363960153342,
+        "ns3": 0.037771076690972905,
+        "ns5": 0.02662316022846767,
+        "polar": 0.028077922906362573,
+        "cubic5": 0.0936480088560927
+      },
+      "layers": {
+        "blocks.0.attention.qkv.weight": {
+          "alignment": 0.002936700591817498,
+          "gradient_norm": 0.5532483458518982,
+          "step_rms": 0.0003768002206925303,
+          "curvature_contribution": 0.012632160447537899
+        },
+        "blocks.2.mlp.0.weight": {
+          "alignment": -4.1972896724473685e-05,
+          "gradient_norm": 0.14188148081302643,
+          "step_rms": 0.00037618877831846476,
+          "curvature_contribution": 0.0021400542464107275
+        },
+        "blocks.3.mlp.2.weight": {
+          "alignment": 5.789343413198367e-05,
+          "gradient_norm": 0.14559990167617798,
+          "step_rms": 0.00037601328222081065,
+          "curvature_contribution": 0.0025225908029824495
+        },
+        "blocks.3.attention.projection.weight": {
+          "alignment": 2.3332962882705033e-05,
+          "gradient_norm": 0.09810236841440201,
+          "step_rms": 0.0003764475986827165,
+          "curvature_contribution": 0.000990930711850524
+        }
+      },
+      "b_batch_sha256": "3a313a1ee46a11da749faaeed833f3030afe9be9fcacc21411a386f17044148f",
+      "c_batch_sha256": "c985f4f14520eaedf4974e6ff96112a44605b3c7ae79e309f15c0e9c48267544",
+      "source_anchor_sha256": "25d0e7d9b64a4f073fa83ad5bd78d9911f136462a0cac58f7de6dfa37422759e"
+    }
+  ],
+  "elapsed_seconds": 131.5165018000007
+}
